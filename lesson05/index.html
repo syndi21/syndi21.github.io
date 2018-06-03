@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第五回 图文混排网页制作</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/2.jpg')">
+<div id="top">
+<div id="logo">第五回 图文混排网页制作</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">网页图像格式</a>
+	  <a href="#fp2" class="">网页中加入图像</a>
+	  <a href="#fp3" class="">图像对象与图像翻转</a>
+	  <a href="#fp4" class="">多样边框与线条绘制 </a>
+	  <a href="#fp5" class="">图文混排网页制作</a>
+</div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>			<!-- <span style="left: 565.5px;" id="marker"></span> -->
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+  <div>
+  &nbsp;<p></p>
+  <h3>&nbsp;</h3>
+<h3>网页图像格式</h3>
+<h4><strong>三种常用的网页图像格式</strong></h4>
+<strong>JPG/JPEG</strong>
+<ul>
+  <li>JPEG可支持多达16M颜色，展现色彩丰富生动的图像</li>
+  <li>可支持图像压缩保存，压缩质量可选。但压缩比越高，图像质量损失越大</li>
+</ul>
+<p><strong>GIF格式</strong></p>
+<ul>
+  <li>8位存储格式的限制，最多只能是256色</li>
+  <li>压缩比高，文件通常较小，网页打开速度快</li>
+  <li><span class="mark">interlaced模式</span>的gif图像以渐显方式呈现，从轮廓到细节，适应人们一般的观赏心理</li>
+  <li>可存储多幅静止图象，展示为二维动画效果。可使图像呈现背景透明的效果  </li>
+  </ul>
+  <div>
+  <table width="700" border="0" align="center" cellpadding="0" style="font-size:14px">
+    <tr>
+      <td width="226"><img src="images/Purple-64.gif"/></td>
+      <td width="250"><img src="images/Purple-64-dither.gif"  /></td>
+      <td width="216"><img src="images/purple-red.gif" /></td>
+    </tr>
+    <tr>
+      <td>200&times;200 Gif 64色， 6.8K</td>
+      <td>200&times;200 Gif 64色 透明，7.38K</td>
+      <td>200&times;200 Gif 128色，40.3K</td>
+    </tr>
+  </table>
+</div>
+<p><strong>PNG</strong></p>
+<ul>
+  <li>兼有gif和jpg的色彩模式
+  </li>
+  <ul>
+    <li>256色以下的index color色彩模式（PNG-8）</li>
+    <li>24位真彩模式（PNG-24）</li>
+  </ul>
+  <li>png采用最大限度的无损压缩处理图像，利于网络传输，同时保持图像品质</li>
+  <li>png图像也可以interlaced模式保存，得更优化的传输显示</li>
+  <li>支持图像透明显示，提供了多层次透明，</li>
+</ul>
+<div>
+  <table width="100%" border="0" cellpadding="0" style="font-size:14px">
+    <tr>
+      <td><img src="images/purple.png"  /></td>
+      <td><img src="images/purple1.png" /></td>
+      <td><img src="images/purple2.png"/></td>
+      <td><img src="images/purple.jpg"  /></td>
+      </tr>
+    <tr>
+      <td>200&times;200 PNG-8， 6.52K</td>
+      <td>200&times;200 PNG-24，28.58K</td>
+      <td>200&times;200 PNG-24，69.97K</td>
+      <td>200&times;200 JPeg高质量,13K</td>
+      </tr>
+    </table>
+</div>
+<h4>对比和选择</h4>
+<ul>
+  <li>不透明和索引色透明的图片， png8比gif更加具有优势；</li>
+  <li>  Alpha透明的图片，png8比gif显示效果好，但文件更大；</li>
+  <li>  网页中使用的照片类图片，jpg文件比png24要小很多。<a name="fp2" id="fp2"></a><br /></li>
+</ul>
+ <p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+ <p>&nbsp; </p>
+ <p>&nbsp; </p>
+  <h3>网页中加入图像</h3>
+  <h4>加入图像前的准备</h4>
+  <ol>
+    <li>在网页制作前寻找、拍摄或处理图像，并将图像文件归类存放（如常见的“images”文件夹）；</li>
+    <li>图像的多少与大小需兼顾网页浏览的<span class="mark">30秒原则</span>；</li>
+    <li>网页中加入图像前，先保存网页到合适的文件夹，必须以相对路径的方式表达图像位置。</li>
+  </ol>
+  <h4>加入图像到网页</h4>
+<ul>
+  <li>插入-&gt;图像（Ctrl+Alt+I）</li>
+  <li>插入面板（常用-图像:图像）</li>
+</ul>
+  <div style="text-align:center;"><img src="images/InsertPic.png" alt="insert a picture" width="640" height="516" /></div>
+  <h4>图像的设定</h4>
+<p>在属性面板进行图像设置：</p>
+<ul>
+  <li>图片的宽和高：直接输入精确值，也可对图像拖动；</li>
+  <li>替代文字：图片不存在时显示的文字；</li>
+  <li>图像的链接：站内链接，直接按层次给出网页文件；站外链接，应由“http://”打头；</li>
+  <li>给图像加边框：输入边框像素；</li>
+  <li>图像处理：剪裁、亮度对比度、锐化、重新取样（慎）；</li>
+  <li>图文混排设定：从经验来说，“左对齐”和“右对齐”的文字图片混排方式不错！<br/>
+  </li>
+</ul>
+  <h5>例：用div+css制作简单的图文混排。</h5>
+  <table width="600" border="0" cellspacing="0">
+    <tr>
+      <td><a href="http://baike.baidu.com/view/4184.htm?fromtitle=%E7%9F%AE%E7%89%B5%E7%89%9B%E8%8A%B1&amp;fromid=1807024&amp;type=syn" target="_blank"><img src="images/imagetext.gif" alt="" width="308" height="194" /></a></td>
+      <td style="margin-left:50px; border:1px solid black"><p>网页代码：</p>
+        <p>&lt;div class=&quot;purple&quot;&gt;<br />
+          &lt;img ......... /&gt;<br />
+          插入文本<br />
+        &lt;/div&gt;</p></td>
+    </tr>
+  </table>
+  <ul>
+    <li>purple需设定：盒子宽度、外间距、内间距、文字字体（尺寸）、行高等。</li>
+  </ul>
+  <h4>img标签及其属性</h4>
+<strong>img标签基本格式</strong>
+<p class="mark1">&lt;img <span class="mark">src=&quot;图像文件url&quot;</span> alt=&quot;替代文本&quot; /&gt;</p>
+<p >说明：src和alt是img标签必需的属性。</p>
+<div align="center">
+  <table width="85%" border="0" cellpadding="0">
+    <tr>
+      <td><img src="images/2.jpg"  alt="Cyclamen" /></td>
+      <td><p>对应的html代码是：</p>
+        <p>&lt;img src=&quot;images/2.jpg&quot; alt=&quot;Cyclamen&quot; /&gt;</p></td>
+    </tr>
+  </table>
+</div>
+<strong><br />
+img标签常用属性</strong>
+<blockquote>
+  <p> align：top|bottom|middle|left|right，图文排版方式。<br />
+    border：像素值，定义图像周围的边框。 <br />
+    height： 像素值或百分比，定义图像的高度。<br />
+    hspace：	像素值，定义图像左侧和右侧的空白。<br />
+    vspace：	像素值，定义图像顶部和底部的空白。<br />
+    width： 像素值或百分比，设置图像的宽度。</p>
+</blockquote>
+  <h5>练习1：用div+css制作简单的图文混排（混排样式参考如下图）。</h5>
+  <div style="text-align:center"><img src="images/cyclamen.png" alt=""  /></div>
+  <p><a name="fp3" id="fp3"></a></p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  <h3>图像对象与图像翻转</h3>
+  <h4>加入图像占位符</h4>
+  <ul>
+    <li>插入-&gt;图像对象-&gt;图像占位符</li>
+    <li>插入面板-&gt;图像:图像占位符</li>
+  </ul>
+  <div>
+    <table width="85%" border="0" cellpadding="0">
+      <tr>
+        <td><img src="" alt="图像占位" name="image1" width="400" height="200" id="image1" style="background-color: #00CC00" /></td>
+        <td><ul>
+          <li>顾名思义：用于布局时图像的占位，预先确定图像在网页上的位置</li>
+          <li>如果浏览时图像还处占位状态，则显示替换文本</li>
+        </ul>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <code>&lt;img src=&quot;&quot; alt=&quot;图像占位&quot; name=&quot;image1&quot; width=&quot;400&quot; height=&quot;200&quot; id=&quot;image1&quot; style=&quot;background-color: #00CC00&quot; /&gt;</code>
+    
+    <h4>鼠标经过图像</h4>
+    <p>鼠标经过图像：当鼠标指针经过一幅图像时，图像的显示会变为另一幅图像。</p>
+    <p>插入-&gt;图像对象-&gt;鼠标经过图像<br />
+    </p>
+      <table width="85%" border="0" cellpadding="0">
+        <tr>
+          <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image28','','images/2.jpg',1)"><img src="images/1.jpg" name="Image28" width="300" height="199" border="0" id="Image28" /></a></td>
+          <td><ul>
+            <li>鼠标经过图像由初始图像和替换图像两幅图像组成</li>
+            <li>两幅图像大小相同</li>
+            <li>不同时，Dreamweaver会自动调整第二幅图像的大小，使之与第一幅图像匹配</li>
+          </ul>            </td>
+        </tr>
+      </table>
+      <a name="fp4" id="fp4"></a>
+    <a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a>
+<p>&nbsp;  </p>
+  <p>&nbsp;</p>
+
+</div>
+<h3>多样边框与线条绘制</h3>
+<p>CSS设置的边框效果可以对图像也可以对文字，此处借图像展开说明。</p>
+<h4>图片边框的设置</h4>
+<div>
+  <table width="100%" border="0" cellpadding="0">
+    <tr>
+      <td align="center"><img   class="b1" src="images/2.jpg" width="300" height="199" alt="border"  style="border:10px #3f0 dotted"/></td>
+      <td align="left"><p><img   class="b4" src="images/2.jpg" width="300" height="199" alt="border"  style="border:10px #C9DAD9 ridge"/></p></td>
+      </tr>
+    <tr>
+      <td><img src="images/borderset.gif" alt="border set" width="480" height="176" /></td>
+      <td><ul>
+        <li>solid     实线</li>
+        <li> dashed   虚线</li>
+        <li> dotted   点虚线</li>
+        <li> double   双线</li>
+        <li> groove   槽线</li>
+        <li> ridge     棱线</li>
+        <li> inset     凹陷效果</li>
+        <li>outset   凸出效果</li>
+      </ul></td>
+    </tr>
+    </table>
+</div>
+<h4>线条的绘制</h4>
+<p><strong>水平线</strong></p>
+<ul>
+  <li>用hr+css即可绘制水平线，如：  &lt;hr style=&quot;border-top:1px dotted blue;&quot;/&gt;</li>
+  <li>用div+css同样可绘制更细的水平线：&lt;div style=&quot;border-top:1px dotted red;&quot;&gt;&lt;/div&gt;</li>
+</ul>
+<hr style="border:1px dotted blue;"/>
+<div style="border-top:1px dotted red;"></div>
+<ul>
+  <li>
+    重复的背景图也可形成分隔：&lt;div style=&quot;background: url(images/rose1.png) repeat-x; height:35px&quot;&gt;&lt;/div&gt;</li>
+</ul>
+<div style="background: url(images/rose1.png) repeat-x; height:35px"></div>
+<p><strong>垂直线</strong></p>
+<ul>
+  <li>用td+css可绘制特定列的左或右边框的垂直线，其高度同列的高度</li>
+  <li>用div+css同样可绘制垂直线，其高度同div的高度</li>
+</ul>
+<h5>练习2：绘制水平线与垂直线，认识与体会各种线型。&nbsp;<a name="fp5" id="fp5"></a></h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p></p>
+</div>
+<div>
+  <h3>图文混排的网页制作</h3>
+  
+  <hr />
+  <a href="http://cpsc.yale.edu/" target="_blank"><img src="images/yalecs.jpg" width="100%" /></a>
+<hr />
+
+  <h4>规范格式</h4>
+  <ol>
+    <li>正文字体为：Verdana, Geneva, sans-serif，13px；</li>
+    <li>News、Upcoming Events、Contact Us的英文字体为Times New Roman，28px；</li>
+    <li>正文文字颜色为#585858；</li>
+    <li>页面的链接颜色为：#0e4c92，鼠标经过时的颜色为：#2a9fe4；</li>
+    <li>水平线条齐宽，第一根为实线，其它为点划线；</li>
+    <li>垂直线条不顶上下边，与水平线保持一点距离；</li>
+    <li>图片与文字以可环绕的方式混合排版，图片置左；</li>
+    <li>有效宽度为1008px，第一列宽672px左右，余下像素为第二列的宽度；</li>
+    <li>设置合适的行间距和边距；</li>
+    <li>页面左边部分的链接呈粗体，右边部分及左的“more news...”链接呈正常字体，同颜色值；</li>
+    <li>概览页面应同被仿制网页在布局、内容、细节上大致相同。  </li>
+  </ol>
+  <p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson05/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson07/index.html">Next</a></td>
+      </tr>
+    </table>
+  &nbsp;<p></p>
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+</div>
+</body>
+</html>

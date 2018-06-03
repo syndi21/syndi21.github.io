@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第七回 耶鲁计算机首页仿制</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+
+.tt td{
+	border:1px #378488 dashed;
+	line-height:28px;
+}
+.tt {
+	border:2px solid #000;
+	border-collapse:collapse;
+}
+.block {
+	background-color: #E0FBFC;
+}
+.block2 {
+	background-color: #FFFFC1;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="top">
+<div id="logo">第七回 耶鲁计算机首页仿制</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">首页布局分析</a>
+	  <a href="#fp2" >顶部横幅制作</a>
+	  <a href="#fp3" class="">页面正文制作</a>
+	  <a href="#fp4" class="">页脚部分制作</a>
+	  <a href="#fp5" class="">格式规范与说明</a>
+	  <a href="#fp6" class="">延伸设计练习</a>
+
+</div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>			<!-- <span style="left: 565.5px;" id="marker"></span> -->
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+ <p>&nbsp;</p>
+  <h3>&nbsp;</h3>
+<h3>首页布局分析</h3>
+<h4>首页</h4>
+<p align="left"><a href="http://cpsc.yale.edu/" target="_blank"><img src="images/yale-cs.jpg" width="100%" alt="yale university" /></a></p>
+<h4>布局分析</h4>
+<table width="88%" border="0" cellspacing="0">
+  <tr>
+    <td width="50%" height="57" align="center" bgcolor="#00ccFF"><h2>页面横幅</h2></td>
+    <td width="50%"  rowspan="4" valign="top"><ol>
+      <li>页面横幅顶窗口边框，铺满全屏宽度；</li>
+      <li>横幅中包含导航栏，导航栏与蓝色顶边无缝紧贴；</li>
+      <li>页面正文区域两边留白；</li>
+      <li>页脚铺满全屏宽度；</li>
+      <li>三部分的有效部分同宽。</li>
+    </ol>
+      <a name="fp2" id="fp2"></a></td>
+  </tr>
+  <tr align="center">
+    <td height="37" bgcolor="#000000" style="color:white">导航栏</td>
+  </tr>
+  <tr align="center">
+    <td height="112"><h2>页面正文</h2>
+      <p>（图、文、线条、链接等组成）</p></td>
+  </tr>
+  <tr align="center">
+    <td height="86" bgcolor="#00ccff"><h2>页脚</h2></td>
+  </tr>
+</table>
+<h4>&nbsp;</h4>
+<h4><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></h4>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+
+  <h3>顶部横幅制作</h3>
+  <h4>渐变蓝色顶边</h4>
+
+  <p><img src="images/yalecs-top.png" width="100%"/></p> <blockquote>
+    <p>&lt;div class=&quot;top&quot;&gt; <br />
+      <span class="block">&lt;div class=&quot;university&quot;&gt;<br />
+&lt;img src=&quot;images/search.png&quot; align=&quot;right&quot; /&gt;<br />
+&lt;/div&gt;</span><br />
+<span class="block2">&lt;div class=&quot;cs&quot;&gt;Computer Science&lt;/div&gt;</span><br />
+&lt;/div&gt;</p>
+  </blockquote>
+  <ul style="list-style-type:square">
+    <li>.top定义的div是一个全幅宽，96px高的、以渐变蓝色（线型图repeat-x）为背景的盒子；</li>
+    <li>.university定义的是1008
+      × 34（px）、居中放置的、带背景图片(位置离左边15px)的盒子；</li>
+    <li>.cs定义的是1008
+    × 62（px）、居中放置的盒子，并对横幅中&quot;Computer Science&quot;设置字体和位置。</li>
+  </ul>
+  <p>&nbsp;</p>
+<h4>导航栏制作</h4>
+<p><img src="images/yalecs-navbar.png" width="100%"  /></p>
+<blockquote>
+  <p>&lt;div class=&quot;navbar&quot;&gt;<br />
+    &lt;div class=&quot;nav&quot;&gt;<br />
+    项目列表制作的导航栏<br />
+  &lt;/div&gt;<br />
+  &lt;/div&gt;</p>
+  </blockquote>
+<ul style="list-style-type:square">
+  <li>.navbar定义的div是一个全幅宽，29px高的、以渐变深灰色（线型图repeat-x）为背景的盒子</li>
+  <li>.nav定义的div是1008
+    × 29（px）的自动置中的盒子</li>
+  <li>另外还需要设计样式.nav ul、.nav  li a、.nav li a:hover<a name="fp3" id="fp3"></a></li>
+</ul>
+<h4><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></h4>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+    <h3>页面正文制作</h3>
+<h4><img src="images/content.png" width="100%" /></h4>
+<h4>页面制作</h4>
+    <ul>
+      <li>在div盒中直接放一表格（也可以直接居中的表格）；</li>
+    </ul>
+    <blockquote>
+      <p>&lt;div class=&quot;content&quot;&gt;<br />
+&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot;&gt;</p>
+      <p>......</p>
+      <p>&lt;/table&gt;<br />
+      &lt;/div&gt;</p>
+    </blockquote>
+    <ul style="list-style-type:square">
+      <li>.content定义的是宽1008px、居中置放、距顶边一定距离的盒子，字体相关信息参照原网页样本；</li>
+      <li>在上次完成部分的基础上，在前面插入图片，大图与上下各留适当间距。<span class="abc" style="background-color:#E3E8EB; background-position:right bottom"><a name="fp4" id="fp4"></a></span></li>
+    </ul><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a>
+  <p></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+<h3>页脚部分制作</h3>
+<h4><img src="images/yalecs-foot.png" width="100%" /></h4>
+<h4>HTML代码</h4>
+<blockquote>
+  <p>&lt;div class=&quot;footer&quot;&gt;<br />
+    &lt;div class=&quot;yale&quot;&gt;<br />
+    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot;&gt;<br />
+  </p>
+  <p>......<br />
+  &lt;/table&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;/div&gt;</p>
+  </blockquote><ul style="list-style-type:square">
+    <li>.footer定义的div是一个全幅宽，95px高的、以渐变蓝色（线型图repeat-x）为背景的盒子；</li>
+    <li>.yale定义的div是1008
+      × 70（px）的带背景图片的盒子，并设置页脚文字样式；    
+      <ul>
+        <li>通过.yale a和.yale a:hlover设置页脚链接样式；    </li>
+        <li>copyright信息和左下角的图片链接由表格布局。    
+        其中左边yale占138px，中间文字占558px，其余为右边的图标链接；</li></ul></li>
+    </ul>
+  <h4>图标链接制作（略）</h4>
+  <blockquote>
+    <p>&lt;div class=&quot;sharing&quot;&gt;<br />
+      &lt;ul&gt;<br />
+  &lt;li class=&quot;facebook first&quot;&gt;&lt;a href=&quot;https://www.facebook.com/YaleUniversity&quot; title=&quot;Facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;<br />
+  &lt;li class=&quot;twitter&quot;&gt;&lt;a href=&quot;http://www.twitter.com/yale&quot; title=&quot;Twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;<br />
+  &lt;li class=&quot;flickr&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/yaleuniversity&quot; title=&quot;Flickr&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;<br />
+  &lt;li class=&quot;itunes&quot;&gt;&lt;a href=&quot;http://itunes.yale.edu/&quot; title=&quot;iTunes&quot;&gt;iTunes&lt;/a&gt;&lt;/li&gt;<br />
+  &lt;li class=&quot;you_tube&quot;&gt;&lt;a href=&quot;http://www.youtube.com/yale&quot; title=&quot;YouTube&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;<br />
+  &lt;/ul&gt;<br />
+  &lt;/div&gt;</p>
+  </blockquote>
+  <h4>图片链接样式设计</h4>
+  <p align="center"><img src="images/piclink.png" width="212" height="34" /></p>
+  <blockquote>
+    <p>
+      .<span class="mark1">sharing ul</span> {<br />
+      width:200px;<br />
+      float: left;<br />
+      margin: 0;<br />
+      padding: 0;<br />
+    }</p>
+    <p><span class="mark1">.sharing ul li</span> {<br />
+      display: inline;<br />
+    }</p>
+    <p><span class="mark1">.sharing ul li a</span> {<br />
+      text-indent: -9999em;<br />
+      float: left;<br />
+      display: block;<br />
+      margin-left: 18px;<br />
+      background: url(<span class="mark">包含10个小图的png图片</span>) no-repeat;<br />
+      background-position: 0 0;<br />
+      width: 24px;<br />
+      height: 24px;<br />
+    }</p>
+    <p><span class="mark1">.sharing ul li.first a</span> { margin-left: 0; }<br />
+      <span class="mark1">.sharing ul li.facebook a</span> { background-position: 0 0; }<br />
+      <span class="mark1">.sharing ul li.twitter a</span> { background-position: -24px 0; }<br />
+      <span class="mark1">.sharing ul li.flickr a</span> { background-position: -48px 0; }<br />
+      <span class="mark1">.sharing ul li.itunes a</span> { background-position: -72px 0; }<br />
+      <span class="mark1">.sharing ul li.you_tube a</span> { background-position: -96px 0; }<br />
+      <span class="mark1">.sharing ul li.facebook a:hover</span> { background-position: 0 -24px; }<br />
+      <span class="mark1">.sharing ul li.twitter a:hover</span> { background-position: -24px -24px; }<br />
+      <span class="mark1">.sharing ul li.flickr a:hover</span> { background-position: -48px -24px; }<br />
+      <span class="mark1">.sharing ul li.itunes a:hover</span> { background-position: -72px -24px; }<br />
+    <span class="mark1">.sharing ul li.you_tube a:hover</span> { background-position: -96px -24px; }<a name="fp5" id="fp5"></a></p>
+  </blockquote>
+  <blockquote><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a> </blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;   </p>
+
+  <h3>格式规范与说明</h3>
+  <ol>
+    <li> 网页横幅部分占满窗口宽度，而页面有效宽度为 1008px；</li>
+    <li>导航栏中的文字垂直居中，左边与“Computer Science”对齐；</li>
+    <li>导航栏上的各链接项设置一定间距，链接文字设置为14px，白色字体；</li>
+    <li>鼠标经过时，链接文字的背景色为灰色#666，背景灰色区域应包括间距，并同深色条同高；</li>
+    <li>当前页对应的链接文字（Home）应为浅蓝色，色值为#9cf；</li>
+    <li>页面正文自适应放置中心，大图与文字部分与横幅间留适当距离；</li>
+    <li>关于页面正文大图下面的部分，可直接利用上次作业内容；</li>
+    <li>页脚部分占满窗口宽度，自设适当的高度；</li>
+    <li>页脚部分的Copyright等文字尺寸统一为12px，链接文字为浅蓝色，色值为#6fb4ef，鼠标经过时颜色有变化，色值为#eeeeee；</li>
+    <li>概览页面应同被仿制网页在布局、内容、细节上大致相同。</li>
+  </ol>
+  <h4><a name="fp6" id="fp6"></a> </h4>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  <h3>延伸设计练习</h3>
+  <h5>仿制耶鲁大学计算机系的其他页面，如：<a href="http://cpsc.yale.edu/academics" target="_blank">http://cpsc.yale.edu/academics</a></h5>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson06/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson08/index.html">Next</a></td>
+    </tr>
+  </table>
+  &nbsp;<p></p>
+
+&nbsp;
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+  &nbsp;<p></p>
+  <p></p>
+&nbsp;<p></p>
+</body>
+</html>

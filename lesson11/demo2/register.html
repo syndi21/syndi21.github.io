@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 16px;
+	font-family:Times, serif;
+	margin:0 auto;
+	background:url(bg-body.jpg) repeat; 
+	color:#667d8b; 
+	text-align:center; 
+}
+.textfield { position:relative; margin:5px auto; padding:7px; height:40px; width:272px; }
+.textfield input { display:block; height:40px; width:272px; text-transform:uppercase; text-align:center}
+.textfield label { position:absolute; top:7px; left:7px; display:block;height:40px; width:272px; line-height:40px;text-transform:uppercase;}
+.button{ /* display:block; */ /* margin:0px; */ /* padding:0px; */ height:28px; /* width:82px; */ /* background:url(../images/form-submit-button.gif) no-repeat; */ border:none; overflow:hidden; text-indent:-9999em; line-height:0px; cursor:pointer; }
+.login a{
+	color:#455863;
+	font-size:18px;
+	font-style:italic;
+}
+.login a:hover{
+	color:#D5BE53;
+}
+-->
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.textfield label').click(function() {
+		$(this).hide();
+		$(this).parent().find('input').attr('value', '').focus();
+	});
+
+	$('.textfield input').focus(function() {
+		$(this).parent().find('label').hide();
+		if( this.value != '' ) {$(this).select();}
+	});
+
+	$('.textfield input').blur(function() {
+		if( this.value == '' ) {
+			this.value = '';
+			$(this).parent().find('label').show();
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div style="margin:100px auto; width:335px; height:350px; background:#c3c3c3; padding-top:20px">
+  <form id="form1" name="form1" method="post" action="">
+    <div class="textfield">
+      <label for="user">USERNAME</label>
+      <input type="text" name="user" id="user" />
+    </div> 
+    <div class="textfield">
+      <label for="pass">PASSWORD</label>
+      <input type="password" name="pass" id="pass" />
+    </div>
+    <div class="textfield">
+      <label for="conpass">CONFIRM PASSWORD</label>
+      <input type="password" name="conpass" id="conpass" />
+    </div>
+    <div class="textfield">
+    <label for="email">EMAIL ADDRESS</label>
+    <input name="email" type="text" />
+    </div>
+    <div style="margin:20px auto; " >
+ <input type="image" name="submit" value="ee" src="form-register-button.gif">
+    </div>
+    <div class="login">
+    <a href="#">Already Registered? Login </a>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

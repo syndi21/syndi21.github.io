@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第三回 CSS样式运用</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+
+.tt td{
+	border:1px #378488 dashed;
+	line-height:28px;
+}
+.tt {
+	border:2px solid #000;
+	border-collapse:collapse;
+}
+.abc {
+	font-size: 64px;
+	line-height: 200px;
+	background:white;
+	/*background-color: #E3E8EB;*/
+	background-image: url(images/back.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-align: center;
+	font-family: "隶书", "汉仪中隶书简", "华文隶书", "经典细隶书繁";
+	color: #C00;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="top">
+<div id="logo">第三回 用CSS样式制作网页</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">HTML+CSS</a>
+	  <a href="#fp2" class="active">CSS设置网页属性</a>
+	  <a href="#fp3" class="">CSS设置文本属性</a>
+	  <a href="#fp4" class="">CSS设计与使用</a>
+	  <a href="#fp5" class="">样式文件建立与应用</a>
+	  <a href="#fp6" class="">延伸练习与研究</a>
+
+</div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>			<!-- <span style="left: 565.5px;" id="marker"></span> -->
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+ <p>&nbsp;</p>
+  <h3>&nbsp;</h3>
+<h3>HTML+CSS</h3>
+<h4>关于CSS</h4>
+<p align="left">CSS是Cascading Style Sheet（<span class="mark">层叠样式表</span>）的缩写。</p>
+<ul>
+  <li>1997，W3C发布HTML4时同时公布CSS1</li>
+  <li>  1998，CSS2发布</li>
+  <li>2010，CSS3发布</li>
+</ul>
+<p align="left">  CSS是网页设计的新技术，大多浏览器都支持，但有不同的表现。它的作用是：</p>
+<ul>
+  <li>为网页上的元素精确定位</li>
+  <li>内容结构和格式控制相分离（html文件仅组织网页内容结构，css文件组织格式）</li>
+  </ul>
+<h4>HTML+CSS</h4>
+<strong>运用CSS样式的网页</strong><p></p>——百度免责声明
+<div>
+  <table width="80%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="54%" valign="top"><p class="mark">CSS表述了页面内容内容的组织格式：</p>
+        <span class="mark1">初步印象</span>：<p></p>
+        <ol>
+          <li>样式在style标签中描述；</li>
+          <li>style标签不包含在body内，包含在head中。</li>
+          </ol></td>
+      <td width="46%" class="content"><code>&lt;head&gt;<br />
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br />
+        &lt;title&gt;百度免责声明&lt;/title&gt;<p style="color:red">
+          &lt;style type=&quot;text/css&quot;&gt;<br />
+          &lt;!--<br />
+          body {<br />
+          &nbsp;&nbsp;line-height:18px;<br />
+          &nbsp;&nbsp;font-size:12px;<br />
+          &nbsp;&nbsp;margin-top: 8px;<br />
+          }<br />
+          --&gt;<br />
+  &lt;/style&gt;</p>
+  &lt;/head&gt;</code></td>
+    </tr>
+  </table>
+</div>
+<h4><strong>网页使用CSS的好处</strong></h4>
+<ol>
+  <li>  大大缩减页面代码，提高浏览速度；</li>
+  <li>  结构清晰，容易被搜索引擎搜索到；</li>
+  <li>  容易改版，通过修改css样式表文件，可实现成批网页的格式修改；</li>
+  <li>  强大的字体控制和排版能力。</li>
+  </ol>
+<h4>Div+CSS</h4>
+<p>div是HTML中的一个标签，可看作是一个容器，容放大块的内容。将div与css结合，可将内容与结构互相独立分离。<a name="fp2" id="fp2"></a></p>
+<p>&nbsp;</p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p>&nbsp; </p>
+<div>
+  <h3>CSS设置网页属性</h3>
+  <h4>进入页面属性设置界面</h4>
+  每个网页编辑的第一个标准步骤：更改网页的基本设定：<p></p>
+  <ul>
+    <li>    修改-&gt;页面属性（Ctrl+J）</li>
+    <li>属性面板-&gt;“页面属性”按钮</li>
+  </ul>
+  <div align="center">
+    <img src="images/property.gif" alt="property" width="605" height="366" /><p></p>
+  </div>
+  <h4>网页外观设置</h4>
+  <p>通过<span class="mark1">页面属性-&gt;外观（CSS）</span>对网页外观，包括背景、文字、颜色等进行设置。
+    </p>
+  <p></p>
+<div>
+  <table width="81%" border="1" cellpadding="0" cellspacing="0" class="tt">
+    <tr align="center">
+      <td width="14%"><strong>属性</strong></td>
+      <td width="31%"><strong>属性名</strong></td>
+      <td width="55%"><strong>说明</strong></td>
+    </tr>
+    <tr>
+      <td>页面字体</td>
+      <td>font-family</td>
+      <td>指定要用于网页的默认字体系列</td>
+    </tr>
+    <tr>
+      <td>大小</td>
+      <td>font-size</td>
+      <td>网页的默认字体大小，常用单位px、pt</td>
+    </tr>
+    <tr>
+      <td>文本颜色</td>
+      <td>color</td>
+      <td>定义页面上文本的颜色</td>
+    </tr>
+    <tr>
+      <td>背景颜色</td>
+      <td>background</td>
+      <td>设置页面的背景颜色</td>
+    </tr>
+    <tr>
+      <td>背景图像</td>
+      <td>background-image</td>
+      <td>背景图像，属性值 <span class="mark">url(图像地址)</span></td>
+    </tr>
+    <tr>
+      <td>重复</td>
+      <td>background-repeat</td>
+      <td>确定图像重复与否，重复的方式<br />
+        <span class="copyright">no-repeat、repeat、repeat-x、repeat-y</span></td>
+    </tr>
+    <tr>
+      <td>左边距</td>
+      <td>margin-left</td>
+      <td rowspan="4">确定页边距的大小<br />
+        常用单位px、pt、%</td>
+      </tr>
+    <tr>
+      <td>上边距</td>
+      <td>margin-top</td>
+      </tr>
+    <tr>
+      <td>右边距</td>
+      <td>margin-right</td>
+      </tr>
+    <tr>
+      <td>下边距</td>
+      <td>margin-bottom</td>
+    </tr>
+    </table>
+</div>
+<span class="mark">观察</span>：页面属性外观CSS设置后生成的代码。
+<h4><strong>网页链接设置 </strong></h4>
+通过<span class="mark1">页面属性-&gt;链接（CSS）</span>对网页链接文字样式进行设置。
+<p></p>
+<p align="center"><img src="images/linkcss.png" width="605" height="365" /></p>
+<p>设置下划线的样式名为text-decoration，如<span class="mark1"><span class="mark">text-decoration: none;</span></span></p>
+<h5><strong>练习1：制作如下网页局部（占有效网面50%宽度，包括周边留白在内）全局参照<a href="http://news.yale.edu/" target="_blank">耶鲁大学新闻页</a>。</strong></h5>
+<p align="center"><a href="http://news.yale.edu/" target="_blank"><img src="images/css1.gif" alt="" width="80%" border="0" /></a></p>
+<p align="center"><img src="images/process.jpg" alt="" width="80%" /></p>
+<p align="center">&nbsp;</p>
+  <p></p>
+  <a name="fp3" id="fp3"></a>
+  <p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+    &nbsp;<p></p>
+    <p>&nbsp;</p>
+    <div   style="background:url(images/oblique-line.gif) repeat; background-attachment:fixed; padding:20px 20px">
+    <h3>CSS设置文本属性</h3>
+  HTML格式设置标签可对网页中的文本进行设置，CSS样式对网页文本的设置更丰富和灵活。
+  <p></p>
+  <h4>进入CSS规则定义界面</h4>
+  <div>
+    <img src="images/cssrule.jpg" alt="css rule" width="309" height="71" align="top" /><p></p>
+    <ul>
+      <li>点击属性面板上CSS选项下<span class="mark1">&lt;新CSS规则&gt;-编辑规则</span> 或者在CSS样式面板中<span class="mark1">新建</span></li>
+      <li>新建CSS规则下输入选择器名</li>
+      <li>在“CSS规则定义”窗口进行设置</li>
+    </ul>
+    <p align="center"><img src="images/cssdefine.gif" alt="css rule define" width="670" height="404" /></p>
+  </div>
+  <h4><strong>CSS规则——类型</strong>
+  </h4>
+  <div>
+    <ul>
+      <li>Font-family：设置字体名 </li>
+      <li> Font-size：设置字体尺寸 </li>
+      <li> Font-style：设置字体风格 </li>
+      <li> Font-weight：设置字体的粗细 </li>
+      <li> Font-variant：设置英文的大小写转换 </li>
+      <li> <span class="mark1">Line-height</span>：设置行高 </li>
+      <li> Text-transform：设置文本中单词的大小写方式 </li>
+      <li> Text-decoration：设置文本修饰 </li>
+      <li> <span class="mark1">Color</span>：设置文本颜色 </li>
+    </ul>
+    </div>
+  <h4><strong>CSS规则——背景</strong>  </h4>
+  <div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr><td width="362" valign="top"><ul>
+          <li><span class="mark1">Background-color</span>：背景色</li>
+          <li><span class="mark1">Background-image</span>：背景图像</li>
+          <li><span class="mark1">Background-repeat</span>：背景图像平铺方式</li>
+          <li>Background-attachment：  图像是固定（fixed）还是随页面滚动（scroll，默认）   </li>
+          <li>Background-position(x)：水平方向位置（left、center、right）</li>
+          <li>Background-position(y)：垂直方向位置（top、center、bottom）</li>
+          </ul>          </td>
+        <td width="206" valign="top"><p><img src="images/css-back.gif" alt="css back" width="403" height="171" /></p>
+          <p><span class="mark1"><span class="mark">说明</span></span>：</p>
+          <ol>
+            <li>Background-position属性起作用的前提是“no repeat”，适合背景图片较大的情形。</li>
+            <li>水平和垂直位置可一起指定：<br />
+              Background-position:100px 100px;<br />
+              Background-position:top left;<br />
+            </li>
+          </ol>          </td>
+        
+      </tr>
+      </table>
+  </div>
+  <h4><strong>CSS规则——区块</strong>
+</h4>
+  <div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr align="center">
+        <td width="422" align="left" valign="top"><ul>
+          <li>Word-spacing：设置字间距，特指单词间隔</li>
+          <li>Letter-spacing：设置字符间距，normal为0，可设负值减少字间距</li>
+          <li><span class="mark1">Vertical-align</span>：  设置垂直对齐方式，默认baseline。通常可选 </li>
+          <li><span class="mark1">Text-align</span>：设置元素中的文本的水平对齐方式，默认起始方向。通常可选left、center、right。 </li>
+          <li>Text-indent：  规定文本块中首行文本的缩进</li>
+          <li>White-space：  设置如何处理元素内的空白，如选nowrap则段落不自动换行</li>
+          <li>Display：  规定元素应该生成的框的类型  </li>
+        </ul>          </td>
+        <td width="343" valign="top"><img src="images/css-block.gif" alt="css block" width="320" height="188" /></td>
+      </tr>
+      </table>
+  </div>
+  <h5>练习2：设计名为”.abc“的CSS样式，使得如下div标签能显示下面效果（高度200px），点击<a href="images/back.png" target="_blank" >素材图片</a>，另存下载。 <br />    
+  </h5>
+  <p>&lt;div class=&quot;abc&quot;&gt;江南好，风景旧曾谙&lt;/div&gt;</p>
+  <div class="abc">江南好，风景旧曾谙</div>
+  对abc稍加修改，同样的div标签显示为：
+  <div style="background-color:#E3E8EB; background-position:right bottom" class="abc" >江南好，风景旧曾谙</div>
+<a name="fp4" id="fp4"></a>  
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  <p>&nbsp;</p>
+</div>
+</div>
+<h3>CSS设计与使用</h3>
+<h4>CSS格式设置规则</h4>
+<div>
+  <table width="100%" border="0" cellpadding="0">
+    <tr>
+      <td colspan="2" valign="top"><p>CSS样式可由“规则定义窗口”或CSS面板生成。也可以直接编写代码设计。</p>
+        <p>CSS 格式设置由两部分组成：<span class="mark">选择器</span>和<span class="mark">声明</span>。</p>
+        <ul>
+          <li><span class="mark">选择器</span>——标识格式元素的符号（如 P、H1、类名或 ID）</li>
+          <li><span class="mark">声明</span>——定义元素样式，由属性名和属性值构成</li>
+        </ul></td>
+      <td rowspan="3" valign="top"><img src="images/css_pane.gif" alt="css pane" width="214" height="611" /></td>
+    </tr>
+    <tr>
+      <td valign="top"><span class="mark">selector</span> {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;property1:value1;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;property2:value2;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+} </td>
+      <td valign="top"><p><span class="mark">h1</span> { <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;font-size:36 px; <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;font-family:Helvetica; <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;font-weight:bold; <br />
+        }</p></td>
+    </tr>
+    <tr>
+      <td colspan="2" valign="top"><p>CSS样式设计的代码应通过style标签放在网页文档的head部分。</p>
+        <p><span class="mark1">HTML+CSS的基本格式</span>：</p>
+        <p>&lt;html&gt;<br />
+  &lt;head&gt;<br />
+  &lt;style  type=&quot;text/css&quot;&gt;<br />
+  一系列选择器的设置<br />
+          &lt;/style&gt; <br />
+          &lt;/head&gt;<br />
+          &lt;body&gt;<br />
+          网页正文<br />
+          其中若干标签使用到了style定义的选择器<br />
+          &lt;/body&gt;<br />
+          &lt;/html&gt;</p></td>
+    </tr>
+  </table>
+</div>
+<h4>CSS分类与使用</h4>
+<p>CSS样式有三种类型，可结合选择器selector名称识别。</p>
+<p><strong>标签选择器</strong><br />
+选择器：直接将html中的标签作为选择器的名称。<br /> 
+使用：相当于标签的扩展定义，使用时直接运用标签即可。
+</p>
+<div>
+  <table width="100%" border="0" cellpadding="0">
+    <tr>
+      <td>&lt;style&gt;<br />
+        h1{font-size:28pt;font-weight:bold;color:red; text-align:center;}<br />
+        h2,h3{font-size:20pt;font-style:italic;text-align:left;}<br />
+&lt;/style&gt; </td>
+      <td><img src="images/titlecss.gif" alt="title" width="496" height="191" /></td>
+    </tr>
+  </table>
+</div>
+<p><strong>类别选择器 </strong></p>
+<p>选择器：由.打头命名，如：<span class="mark1"> .text{ font-family:隶书;  color:#ff00ff ;text-align:center;}</span><br />
+使用：在html文件的标签中标识class属性值的方式。<span class="mark">class=&quot;类别选择器&quot;</span><br />
+如：<span class="mark1">&lt;p class=&quot;text&quot;&gt;个人概况&lt;/p&gt; </span></p>
+<p><strong>ID选择器</strong></p>
+<p>选择器：由#打头命名，如：<span class="mark1"> #textid{ font-family:隶书;  color:#ff00ff ;text-align:center;}</span><br />
+使用：在html文件的标签中标识id属性值的方式。<span class="mark">id=&quot;id选择器&quot;</span><br />
+如：<span class="mark1">&lt;p id=&quot;textid&quot;&gt;个人概况&lt;/p&gt; </span></p>
+<p><span class="mark">说明</span>： </p>
+<ol>
+  <li>id选择器适用于与javascript脚本协同作用；</li>
+  <li>优先级过高，重用性差，尽量不用。<a name="fp5" id="fp5"></a></li>
+</ol>
+&nbsp;
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  &nbsp;<p></p>
+<p></p>
+  <h3>样式文件建立与运用*</h3>
+  <h4><strong>CSS样式文件的建立</strong></h4>
+  <p><strong>文件--&gt;新建，选CSS空白页或示例中的样式表</strong></p>
+  <p align="center"><img src="images/Create-css-file.gif" alt="" width="834" height="499" /></p>
+  <p>CSS样式文件扩展名为.css。思考怎样用css样式处理如下问题：</p>
+  <ul>
+    <li>网页字体和颜色的设置</li>
+    <li>网页背景图像的设置（备用背景色方案）</li>
+    <li>各种图像平铺方式的尝试</li>
+    <li>网页某区域文本的设置（字体、字体尺寸、行间距、字体风格、背景色等）</li>
+    </ul>
+  <h4>样式文件的运用</h4>
+  <p>在Head部分，用style标签，导入css样式文件即可。</p>
+  <p><code>&lt;style type=&quot;text/css&quot;&gt;<br />
+    &lt;!--<br />
+    <span class="mark1">@import url(&quot;../files/lesson-style.css&quot;);</span><br />
+    --&gt;<br />
+  &lt;/style&gt;</code></p>
+  <h5>练习三：针对如下的新闻网页局部，设计合适的css样式<a href="images/yale-main.rar"></a>，并仿制该部分网页。</h5>
+  <p><a href="http://news.yale.edu/" target="_blank"><img src="images/Yalenews.jpg" width="100%" border="0" /></a><a name="fp6" id="fp6"></a></p>
+  <h5><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  <h3>延伸练习与研究</h3>
+  <h5>尝试制作完整网页。</h5>
+<p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson02/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson04/index.html">Next</a></td>
+      </tr>
+  </table>
+  &nbsp;<p></p>
+
+&nbsp;
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+  &nbsp;<p></p>
+  <p></p>
+&nbsp;<p></p>
+</body>
+</html>

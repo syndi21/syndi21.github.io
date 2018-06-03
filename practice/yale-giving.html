@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giving to Yale</title>
+<style type="text/css">
+@import url("menu.css");
+</style>
+<script type="text/javascript">
+var num=5;
+function imgSet(){
+	var id;
+	var name=new Array("GTY_main_banner_bluefellows","GTY_main_banner_naert","GTY_main_banner_onlineLearning-1","GTY_main_banner_SCG2014_0","option_4b");
+	for(var i=1;i<=5;i++){
+		id="num"+i;
+		document.getElementById(id).style.backgroundColor="#666666";
+		document.getElementById(id).style.border="none";
+	}
+	var thisId=window.event.srcElement.id;
+	document.getElementById(thisId).style.backgroundColor="#4b4b4b";
+	document.getElementById(thisId).style.border="1px #afb964 solid";
+	for(var i=1;i<5;i++){
+		if(thisId=="num"+i)break;
+	}
+	document.getElementById("img").setAttribute('src', 'images/' + name[i-1] + '.jpg'); 
+	num=i;
+}
+function imgfor(){
+	var id;
+	var name=new Array("GTY_main_banner_bluefellows","GTY_main_banner_naert","GTY_main_banner_onlineLearning-1","GTY_main_banner_SCG2014_0","option_4b");
+	for(var i=1;i<=5;i++){
+		id="num"+i;
+		document.getElementById(id).style.backgroundColor="#666666";
+		document.getElementById(id).style.border="none";
+	}
+	num++;
+	if(num>5)num=1;
+	var thisId="num"+num;
+	document.getElementById(thisId).style.backgroundColor="#4b4b4b";
+	document.getElementById(thisId).style.border="1px #afb964 solid";
+	document.getElementById("img").setAttribute('src', 'images/' + name[num-1] + '.jpg'); 
+}
+setInterval(imgfor,3500);
+</script>
+
+</head>
+<body>
+<div style=" width:100%; height:120px; background:#00346a;">
+<div style="width:100%; height:74px; margin-top:0; background:url(images/header-bg.gif) repeat-x">
+<div style="width:960px; margin:0 auto; height:74px; background:url(images/header-masthead-24.png) left bottom no-repeat;">
+<ul class="topmenu">
+    <li><a href="#">Schools & Units</a></li>
+    <li><a href="#">Volunteers</a></li>
+    <li></li>
+    <li><a href="#">AYA</a></li>
+    <li></li>
+    <li><a href="#" style="border:none">Key Contacts</a></li>
+  </ul>
+</div>
+</div>
+<div style="width:100%; background:#afb964; height:40px">
+<div class="menu">
+<div style="float:left">
+<ul>
+<li><a  href="#">Priorities</a>
+  <ul>
+  <li><a href="#">Scholarships &amp; Fellowships</a></li>
+  <li><a href="#" >Faculty Support</a></li>
+  <li ><a href="#">New Residential Colleges</a></li>
+  <li><a href="#" >West Campus</a></li>
+  <li ><a href="#" >Science &amp; Technology</a></li>
+  <li><a href="#" >Arts &amp; Collections</a></li>
+  <li><a href="#" >International Initiatives</a></li>
+  <li><a href="#" >Global Health</a></li>
+  <li><a href="#">Schools &amp; Units</a></li>
+  <li><a href="#" >Research Support</a></li>
+  <li ><a href="#">Campus &amp; Student Life</a></li>
+  <li><a href="#" >Facilities</a></li>
+  <li ><a href="#">Annual Giving</a></li>
+  </ul>
+</li>
+<li><a href="#">Ways to Give</a>
+  <ul>
+    <li><a href="#">Recognition</a></li>
+    <li><a href="#">Annual Giving</a></li>
+    <li><a href="#">Reunion Giving</a></li>
+    <li><a href="#">Capital Giving</a></li>
+    <li><a href="#">Planned Giving &amp; Bequests</a></li>
+    <li><a href="#">Corporate &amp; Foundation Giving</a></li>
+  </ul>
+</li>
+<li><a href="#">Supporters</a>
+    <ul >
+    <li><a href="#">Alumni</a></li>
+    <li><a href="#">BOLD Alumni</a></li>
+    <li><a href="#">Parents</a></li>
+    <li><a href="#">Friends</a></li>
+    <li><a href="#">Students</a></li>
+    <li><a href="#">Grateful Patients</a></li>
+    <li><a href="#">Corporations &amp; Foundations</a></li>
+    <li><a href="#">Volunteers</a></li>
+    </ul>
+</li>
+<li><a href="#">Learn More</a>
+    <ul>
+      <li><a href="#">Publications</a></li>
+      <li><a href="#">Multimedia</a></li>
+      <li><a href="#">Student Profiles</a></li>
+      <li><a href="#">Faculty Profiles</a></li>
+    </ul>
+</li>
+<li><a href="#">News</a>
+</li>
+</ul>
+<!-- clear the floats if required -->
+</div>
+<div style="float:right; padding-right:15px;">
+<form action="" method="post" style="margin:2px 0 auto auto">
+<input name="text" type="t

@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第十回 框架网页的设计与制作</title>
+<style type="text/css">
+@import url("../files/lesson-style.css");
+
+.ifr{
+	text-align:center;
+	border:#900 solid thin;
+	width:800px;
+	height:480px;
+	margin:0;
+}
+.menu{
+	line-height:48px;
+	vertical-align:middle;
+	text-align:center;
+	font-weight:bold;
+	height:550px;
+}
+.menu a {
+	font-size: 16px;
+	color: #000;
+	display: block;
+	width: 125px;
+	text-decoration:none;
+	border:#09F outset 2px;
+}
+/*
+.menu a:hover {
+	text-decoration: underline;
+	color: #FFF;
+	background:#39C;
+	border:4px ridge #666;
+}*/
+</style>
+<script type="text/javascript">
+function backset(){
+	var id;
+	for(var i=1;i<=5;i++){
+		id="link"+i;
+		document.getElementById(id).style.backgroundColor="white";
+	}
+	var thisId=window.event.srcElement.id;
+	document.getElementById(thisId).style.backgroundColor="#beeefa";
+}
+</script>
+</head>
+
+<body>
+<div id="top">
+  <div id="logo">第十回 框架网页的设计与制作</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">关于框架网页</a>
+	  <a href="#fp2"  class="">框架与网页排版</a>
+  <a href="#fp3"  class="">框架网页制作实训</a>
+	  <a href="#fp4"  class="">嵌入式框架制作</a>
+  <a href="#fp5"  class="">简易相册页面制作</a></div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>	
+
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+  <div>
+    <h3>&nbsp;</h3>
+    <h3>&nbsp;</h3>
+    <h3>关于框架网页</h3>
+    <h4>框架网页认识</h4>
+    <p>框架网页是一种多网页的结构，在同一个浏览器窗口中可展现多个网页，网页间可以通过超链接协同作用。</p>
+    <div style=" text-align:center"><a href="http://bbs.runsky.com/" target="_blank"><img src="images/sample.png" alt="dl" /></a></div>
+    
+    <p>如上图的网页放在左右拆分的网页框架中：</p>
+    <table width="341" border="1" cellspacing="0" cellpadding="0">
+      <tr align="center">
+        <td width="146" height="66">leftmenu.html</td>
+        <td width="189">index.html </td>
+      </tr>
+    </table>
+    <p align="center" class="mark1">framepage.html    </p>
+    <h4>框架网页的基本原理 </h4>
+    <ul>
+      <li>所谓“框架”，就是将浏览器窗口划分为若干个区域；</li>
+      <li> 框架网页并不是一个真正意义上的网页，它主要记录在框架网页中所包含的框架数量以及拆分方式等信息，每一个单独的框架将由具有实际内容的网页填充。</li>
+    </ul>
+    
+    <h4>框架网页设计欣赏</h4>
+    <div align="center"><img src="images/design.jpg" alt="design" width="930" height="421" /></div>
+    <p><a name="fp2" id="fp2"></a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3>框架与网页排版</h3>
+    <h4>网页排版分类</h4>
+    <p> 根据目前网页设计现况，以及在网络上能呈现的设计条件，可以把网页排版归类为三大类：</p>
+    <ul>
+      <li>分栏式结构</li>
+      <li>区域排版</li>
+      <li>非规律的页面排版</li>
+    </ul>
+    <p>分栏式结构和区域排版两种较常见，是网页设计架构的首选。 </p>
+    <br />
+    <h4>分栏式结构 </h4>
+    <p>分栏式结构也称为竖分栏。把页面从上到下分割为几列的设计结构。很容易通过框架实现。</p>
+    <p><a href="http://www.linkdup.com/index.html" target="_blank">linkdup.com</a>：</p>
+    <p align="center"><img src="images/linkdup.png" alt="linkdup" width="867" height="644" align="center" /></p>
+    <p>导航栏下的网页区域为三分栏结构：</p>
+    <table width="800" border="1" cellpadding="0" cellspacing="0">
+      <tr align="center" bgcolor="#00FFFF">
+        <td height="40" colspan="3" bgcolor="#FFFFFF">nav.html</td>
+      </tr>
+      <tr align="center" bgcolor="#00FFFF">
+        <td width="165" height="159">left.html</td>
+        <td width="134">middle.html</td>
+        <td width="135"><p>index.html</p></td>
+      </tr>
+    </table>
+    <p align="center" class="mark1">index.html</p>
+    <p>网页易读性的考虑，分栏数不宜超过5栏。    </p>
+    <h4>框架实现网页分栏</h4>
+    <ul>
+      <li> 使用框架易实现网站导航，让网站的结构更加清晰；</li>
+      <li>框架用于网页分栏排版可使网站的风格一致； </li>
+      <li>框架与框架集构成了浏览器中所见的完整页面：
+        <ul>
+          <li>框架（Frame）：框架是浏览器窗口中的一个区域，对应于一个网页文件。</li>
+          <li> 框架集（Frameset）：框架集也是一个网页文件，包含了对整个窗口拆分成框架的信息（区域位置、大小、对应的网页文件等）。 </li>
+        </ul>
+      </li>
+    </ul>
+    <h4>框架网页制作</h4>
+<p>框架集集成显示框架中的网页，但各网页是分别存放的。</p>
+    <ul>
+      <li>菜单命令：文件-&gt;新建-&gt;示例中的页：框架页</li>
+      <li> 插入面板：布局-&gt;框架
+        （见下图）</li>
+      <li> 直接拖动：鼠标放到框架边框-&gt;双箭头光标时拖拽边框 </li>
+    </ul>
+    <table width="90%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top"><img src="images/insert-frame.png" width="162" height="266" alt="insert frame" /></td>
+        <td valign="top"><p>此方法可用于在网页（一般网页或框架网页）中插入布局框架。</p>
+          <p>&nbsp;</p>
+          <ul>
+            <li>框架的增、删、改</li>
+            <li>框架的保存</li>
+            <li>框架集的保存</li>
+          </ul>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <h4>编辑框架网页</h4>
+    <p> <strong>改变框架大小</strong></p>
+    <p> 用鼠标拖拽框架边框可随意改变框架大小。<br />
+    </p>
+    <p><strong>删除框架</strong></p>
+    <p>用鼠标把框架边框拖拽到父框架的边框上，可删除框架。</p>
+    <p><strong>设置框架属性</strong></p>
+    <p>设置框架属性时，必须先选中框架。</p>
+    <table width="90%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><ul>
+          <li><span class="mark1">窗口-&gt;框架</span>，打开框架面板</li>
+          <li>单击某个框架，即选中该框架</li>
+          <li>属性面板上可以设置框架属性
+            <blockquote>
+              <p>&nbsp;</p>
+            </blockquote>
+          </li>
+        </ul>
+          <img src="images/topframe.png" alt="topframe-perpro" width="532" height="94" /></td>
+        <td align="right"><img src="images/select-frame.png" alt="select frame" width="215" height="248" /></td>
+      </tr>
+    </table>
+    <p class="mark">注意：</p>
+    <ol>
+      <li>框架是不可以合并的；</li>
+      <li>在创建链接时要用到框架名称，应给每个框架命名框架名。 </li>
+    </ol>
+    <h4> 在框架中使用超级链接 </h4>
+    <p>在框架式网页中制作超级链接时，一定要设置链接的目标属性。在导航条上创建链接时，一般将目标文档放在另一个框架中显示。</p>
+    <table width="90%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><p>属性面板，“目标”菜单中的选项：</p>
+          <ul>
+            <li> _blank 放在新窗口中</li>
+            <li>_parent 放到父框架集或包含该链接的框架窗口中</li>
+            <li>_self 放在相同窗口中（默认窗口无须指定）</li>
+            <li> _top 放到整个浏览器窗口并删除所有框架</li>
+            <li>****Frame，放到对应名称的框架中</li>
+          </ul></td>
+        <td><img src="images/link.png" width="124" height="120" alt="link" /></td>
+      </tr>
+    </table>
+    <p><strong>练习：设计如下简单的左右框架网页。</strong></p>
+    <div style="width:640px;margin:0 auto"><img src="images/frameset.png" width="640" height="455" /></div>
+    <h3><a name="fp3" id="fp3"></a></h3>
+    <h3>&nbsp;</h3>
+    <h3>&nbsp;</h3>
+    <h3>框架网页制作实训</h3>
+    <h4>制作linkdup.com框架网页</h4>
+    <div style="text-align:center"> 
+      <p><img src="images/linkdup-d.png" width="824" height="615" alt="linkdup" />&nbsp;    </p>
+    </div>
+    <a href="linkdup.rar">素材下载</a>
+    <h4>依照linkdup的分栏改做“我的空间”个人网站</h4>
+    <p><strong>分栏建议与说明</strong></p>
+    <ul>
+      <li>左边栏：导航条和友情链接，导航条栏目设置个性化，至少三项以上。</li>
+      <li>右边栏：最新动态图文展示（与导航无关）</li>
+      <li>中间栏：对应于导航的网页显示，此栏应设为尽量最宽。<a name="fp4" id="fp4"></a></li>
+    </ul>
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3>嵌入式框架的制作</h3>
+    <p>嵌入式框架即为iframe框架，它可以把一个网页的框架和内容嵌入到网页中。</p>
+    <h4> 插入iframe嵌入式框架 </h4>
+    <p>通过插入面板，插入-&gt;iframe</p>
+    <p>Html代码中将出现irame标签：&lt;iframe&gt;&lt;/iframe&gt;</p>
+    <p><span class="mark">说明</span>：浏览器不支持页内框架时，会显示提示信息。如，“您的浏览器不支持页内框架，无法正常显示”。</p>
+    <h4>iframe标签的主要属性</h4>
+    <p>src—— 指定页内框架内要显示页面的URL。<br />
+      width——设置页内框架的宽，取值是像素数或百分比。<br />
+      height——设置页内框架的高，取值是像素数或百分比。<br />
+      align——top|middle|bottom|left|right指定页内框架对齐方式<br />
+      frameborder——1|0 指定是否显示页内框架的边框。 <br />
+      name ——指定页内框架的名称<br />
+      scrolling——yes|no|auto 指定页内框架是否有滚动条</p>
+    <h4>框架网页示例</h4>
+    <p>用适当宽度的div，通过设置合适的margin使网页元素居中对齐。</p>
+    <div style="margin:0 auto; width:630px"><iframe width="630" height="460"src="iframe.html"></iframe>&nbsp;</div>
+    <p><strong>关键点</strong>：</p>
+    <p>1、iframe除了尺寸外，需设置name值（如为content）；</p>
+    <div style="font-size:14px; padding-left:20px">如：&lt;iframe src=&quot;http://www.baidu.com&quot; <span class="mark">name=&quot;content&quot;  </span>   class=&quot;ifr&quot;&gt;&lt;/iframe&gt;    </div>
+    <p>2、链接打开的目标应设为框架的name值，这样链接页就可以框架中显示。</p>
+<div style="font-size:14px; padding-left:20px">如：&lt;a href=&quot;http://www.baidu.com&quot; <span class="mark"> target=&quot;content&quot; </span>&gt;百度搜索 &lt;/a&gt;<a name="fp5" id="fp5"></a></div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3>简易相册页制作</h3>
+    <p>当点击小图时，利用iframe框架在同一个可视页面上显示大图。</p>
+    <div style="text-align:center">
+    <iframe src="demo/showpic.html" style="width:850px; height:800px; margin:auto">&nbsp;</iframe>
+    </div>
+    <h4><strong>设计要求</strong></h4>
+    <ol>
+      <li>相册网页应图文并茂，作为个人网站中的一部分；</li>
+      <li>精心设计的文字样式与内容，与图片相响应；</li>
+      <li>用色雅致，版面简洁；</li>
+      <li>所有的设计需与网站整体风格相协调。</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <table width="100%" border="0" cellpadding="2">
+      <tr>
+        <td><a href="../lesson09/index.html">Last</a></td>
+        <td align="center"><a href="../index.html">Home</a></td>
+        <td align="right"><a href="../lesson11/index.html">Next</a></td>
+      </tr>
+    </table>
+    &nbsp;
+    <p></p>
+    <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+  </div>
+</div>
+</body>
+</html>

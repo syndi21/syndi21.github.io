@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tt td{
+	border:1px solid #378488;
+}
+.tt th{
+	border:1px solid #378488;
+}
+.tt {
+	color: #333;
+	background-color: #f7f7ff;	
+	border-collapse:collapse;
+	/*border-style: none;*/
+	border-color: #3C0;
+}
+small{
+	line-height:16px;
+	font-size:10px;
+}
+.link {
+	font-size: 16px;
+}
+strong {
+	font-size: 20px;
+	line-height: normal;
+}
+.tt1 {
+	color: #F00;
+	border-collapse:collapse;
+	line-height: 1px;
+	list-style-type: decimal;
+}
+.back {
+	/*background-image: url(images/line.gif);*/
+	background-repeat: repeat-x;
+	border: thick double #090;
+	font-size: 36px;
+	text-align: center;
+	font-family: "隶书", "汉仪中隶书简", "华文隶书", "经典细隶书繁";
+	color: #666;
+}

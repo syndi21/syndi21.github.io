@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="bookmark"/>
+<title>第一回 HTML快速入门</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+-->
+</style></head>
+
+<body>
+<div id="top">
+   <div id="logo">第一回 HTML快速入门</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">网页与HTML</a>
+	  <a href="#fp2" class="">HTML文件结构</a>
+	  <a href="#fp3" class="">HTML标签的使用</a>
+	  <a href="#fp4" class="">HTML标题和段落</a>
+	  <a href="#fp5" class="">HTML对颜色的控制</a>
+	  <a href="#end" class="">网页从临摹到设计</a>
+</div>
+			<!-- <span style="left: 565.5px;" id="marker"></span> --><div id="home"> <a href="../index.html"><img src="../files/Home.png" alt="Home"  border="none" align="right" longdesc="../index.html" /></a></div></div><a name="fp1" id="fp1"></a>
+<div class="content">
+  <div>
+  &nbsp;<p></p>
+  <p>&nbsp;</p>
+  <h3>网页与HTML</h3>
+  <h4>什么是网页？</h4>
+  <ul>
+    <li>网页是Internet上的一个页面，网站由若干网页组成；</li>
+    <li>可呈现的网页只有一种格式——HTML格式，网页可以是HTML文件支持的，亦可是动态网页技术生成的；</li>
+    <li>HTML文件的扩展名为.html或.htm；</li>
+    <li>一个HTML文件成为Internet上的一页，需要有一个网络空间（用于上传）和网页地址（指向网页）。</li>
+  </ul>
+<h4>HTML——Hyper Text Markup Language （超文本标记语言）</h4>
+<table width="100%" border="0">
+  <tr>
+    <td width="52%" valign="top">HTML是Internet上用于编写网页的主要语言：
+      <ul>
+      <li>精简有力的文件定义</li>
+      <li>可设计出多姿多彩的超媒体文件</li>
+      <li>通过HTTP通信协议，HTML文件可在www上跨平台文件交换</li>
+    </ul>
+      <p>&nbsp;</p></td>
+    <td width="48%"><img src="images/hypermedia.gif" alt="Hypermedia" width="377" height="224" align="top" /></td>
+  </tr>
+</table>
+<p><strong>HTML主要特点</strong>：文档容易创建、存储量小、平台无关性。 </p>
+<p><strong>HTML的历史</strong>：</p>
+<div align="center">
+  <table width="580" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="127" align="center">
+        <strong>版本 </strong></td>
+      <td  align="center"><strong>说明 </strong></td>
+    </tr>
+    <tr>
+      <td width="127" >HTML 1.0</td>
+      <td width="447" >1993.6，互联网工程工作小组（IETF）发布</td>
+    </tr>
+    <tr>
+      <td width="127" valign="top">HTML 2.0</td>
+      <td width="447" valign="top">1995.11</td>
+    </tr>
+    <tr>
+      <td width="127" valign="top">HTML 3.0</td>
+      <td width="447" valign="top">1996.1，W3C推荐标准</td>
+    </tr>
+    <tr>
+      <td width="127" valign="top">HTML 4.0</td>
+      <td>1997.12，W3C推荐标准</td>
+    </tr>
+    <tr>
+      <td width="127">HTML 4.1</td>
+      <td>1999.12，W3C推荐标准</td>
+    </tr>
+    <tr>
+      <td width="127">HTML 5.0</td>
+      <td>2008.8，W3C工作草案推荐标准</td>
+    </tr>
+  </table>
+</div>
+  <p>注：W3C——万维网联盟（World Wide Web Consortium），于1994.10在麻省理工计算机实验室成立。
+  </p>
+  <h4><strong>HTML文件与浏览器</strong>  </h4>
+  <span class="mark">
+  <p></p>
+  </span><em><strong>A browser </strong></em>is a specialized software program allowing personal computer users to access the Internet's <em>World</em> <em>Wide</em> <em><em>Web</em>.</em>
+<p>HTML文件由浏览器解释执行。同一个HTML文件在不同的浏览器表现不尽相同。 
+  常用的浏览器有：
+  </p>
+  <p></p>
+<p></p>
+<ul>
+  <li>Internet Explorer（IE）</li>
+  <li>Firefox（火狐）</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li> Safari</li>
+  </ul>
+<h4>HTML网页元素</h4>
+<p>网页元素有：文本、图像、超级链接、导航栏、表格、表单、多媒体等。</p>
+<p><strong>文本</strong>：
+  网页的主体，关于文本通常需设置字体、字号、颜色和其他格式。</p>
+<p><strong>图像</strong>：网页的基本元素，
+  可用作标题、网站logo、网页背景、链接按钮、导航栏、背景图等。
+  网页图像格式有：jpeg、gif、png。</p>
+<p><strong>超级链接</strong>：
+  超级链接，又名超链接。是从一源处直达另一目标处的连接指定。目标处可以是：</p>
+<ul>
+  <li> 相同网页的不同位置</li>
+  <li> 另一个网页（站内或站外）</li>
+  <li> 一个文件（pdf文件、图片文件、应用程序文件）</li>
+  <li> 电子邮件地址</li>
+</ul>
+<strong>导航栏</strong>：
+  导航栏让访问者清晰明了网页内容组织，快捷找到所需要的资源。通常安排在页眉区域，呈现为一排水平导航按钮。
+<p><strong>表格</strong>：
+  组织内容的一种方式，常用于网页布局。</p>
+<p><strong>表单</strong>：
+  用于交互收集信息。</p>
+<p><strong>多媒体</strong>：
+  网页上可包含的多媒体通常指：声音、动画、视频等内容。 <a name="fp2" id="fp6"></a></p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<p>
+</p>
+</div>
+<div>
+  <h3>HTML文件结构</h3>
+  <h4>HTML文档的编写方法 </h4>
+  <ul>
+    <li> 文本编辑工具，如记事本、Notepad++等</li>
+    <li> 使用可视化HTML编 辑 器，如
+      Frontpage、Dreamweaver等</li>
+    <li> 由Web 服务器（ 或称HTTP 服务器） 一 方实时动态生成</li>
+  </ul>
+  <h4><strong>第一个网页</strong>
+    <p></p>
+</h4>
+  <div>
+    <table width="94%" border="0">
+    <tr>
+      <td width="350">&lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &lt;title&gt;my first page&lt;/title&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+        This is my first web page!<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt; </td>
+      <td width="50%"><ul>
+        <li>用<span class="mark1">记事本</span>编写此网页文件</li>
+        <li>观察浏览器标题和窗口中内容</li>
+        <li>也可通过<a href="http://www.w3school.com.cn/tiy/t.asp?f=html_basic">Html在线测试</a>观察</li>
+        </ul>
+        <p>&nbsp;</p>
+        &nbsp;</td>
+    </tr>
+  </table></div>
+  <h4><strong>HTML文件结构</strong></h4>
+  <div>
+    <table width="94%" border="0" >
+    <tr>
+      <td width="350"><table width="350" border="0" align="left">
+        <tr>
+          <td width="305">&lt;html&gt; </td>
+        </tr>
+        <tr>
+          <td bgcolor="#FFD2D9">&lt;head&gt;<br />
+&lt;title&gt;标题部分&lt;/title&gt;<br />
+&lt;meta&gt;页面信息说明&lt;/meta&gt;<br />
+&lt;/head&gt;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#FFFFCC">&lt;body&gt;<br />
+正文部分<br />
+&lt;/body&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;/html&gt;</td>
+        </tr>
+      </table>        <br /></td>
+      <td width="50%">简单划分由两部分组成：
+        <ul>
+        <li>head——头部</li>
+        </ul>
+        <blockquote>
+          <p>描述文档的各种属性和信息，大多数头信息在浏览器窗口中不显示。</p>
+        </blockquote>
+        <ul>
+          <li>body——正文</li>
+          </ul>
+        <blockquote>
+          <p>正文内容，在浏览器中显示。</p></blockquote></td>
+    </tr>
+  </table>
+  </div>
+  <h4><strong>  第二个网页</strong></h4>
+  <div>
+<table width="94%" border="0">
+  <tr>
+    <td width="415">&lt;html&gt;<br />
+      &lt;head&gt;<br />
+      &lt;title&gt;my first page&lt;/title&gt;<br />
+      &lt;/head&gt;<br />
+      &lt;body<span class="mark"> align=&quot;center&quot;</span> <span class="mark">bgcolor=&quot;lightcyan&quot;</span>&gt;<br />
+      This is my first web page!<br />
+      &lt;/body&gt;<br />
+      &lt;/html&gt; </td>
+    <td width="413"><ul>
+      <li>用记事本编写此网页文件</li>
+      <li>观察浏览器中与第一个网页的区别</li>
+      <li>在body中添加第二行：<u>&lt;br&gt;Welcome you!</u>，再观察网页：<br />
+      </li>
+    </ul>
+      &nbsp;
+      </td>
+  </tr>
+</table></div>
+<h4><strong>源代码特点</strong></h4>
+<ul>
+  <li>不区分大小写</li>
+  <li class="mark">空格和回车除了代码清晰性外没别的意义</li>
+  <li>标签中可放置属性</li>
+  <li>标签中不可加空格</li>
+</ul>
+<h5><strong>练习：设计一个标题为“Hello”的网页Hello.html，分行显示学号、姓名和e-mail地址。</strong><a name="fp3" id="fp3"></a></h5>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  &nbsp;</div>
+
+<div>
+<h3>HTML标签的使用 </h3>
+<p>HTML文件最基本标签有：html、head、title、meta、body。</p>
+<h4><strong>  标签的使用</strong></h4>
+<p>HTML中标签的使用形式有如下三种：</p>
+<ul>
+  <li>&lt;标签&gt;......&lt;/标签&gt;</li>
+  <li>&lt;标签 属性名=属性值 ...&gt;......&lt;/标签&gt;</li>
+  <li>&lt;标签&gt; 或&lt;标签 属性名=属性值/&gt; </li>
+</ul>
+<p>说明：大多数标签可设属性，标签与属性之间至少有一个空格分隔。</p>
+<h4><strong>meta标签的使用</strong></h4>
+<p class="mark1">&lt;meta 属性名=属性值 ... /&gt;</p>
+<div>
+  <table width="713" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr align="center">
+    <td width="162" valign="top"><strong>作用</strong></td>
+    <td width="545" valign="top"><strong>格式说明 </strong></td>
+  </tr>
+  <tr>
+    <td width="162" valign="top">标记页面关键词<br />
+      （供搜索引擎搜索）</td>
+    <td width="545" valign="top">&lt;meta <span><span class="mark">name=&quot;keywords&quot;</span> <span class="mark">content=&quot;具体的关键字&quot;</span>/&gt;</span><br />
+      与网站或页面主题相关，具体而非笼统<br />
+        多个关键字，考虑感兴趣用户群可能的搜索倾向</td>
+  </tr>
+  <tr>
+    <td width="162" valign="top">标记文档的作者</td>
+    <td width="545" valign="top">&lt;meta <span class="mark">name=&quot;author&quot; content=&quot;作者姓名&quot;/</span>&gt; </td>
+  </tr>
+  <tr>
+    <td width="162" height="61" valign="top">标记页面解码方式</td>
+    <td width="545" valign="top"><p>&lt;meta <span class="mark">http-equiv=&quot;Content-Type&quot;</span> <span class="mark">content=&quot;text/html; charset=gb2312&quot;</span>/&gt;</p></td>
+  </tr>
+  <tr>
+    <td width="162" valign="top">网页自动跳转</td>
+    <td width="545" valign="top">&lt;meta <span class="mark">http-equiv=&quot;refresh&quot;</span> <span class="mark">content=&quot;5;URL=跳转到的地址&quot;</span>/&gt;<br />
+    注意：站外链接应由“http://”打头。</td>
+  </tr>
+</table></div>
+<h5><strong>练习：修改Hello.html，令其10秒钟后自动跳转。</strong></h5>
+<h4><br />
+  <strong>body标签的使用</strong></h4>
+<p class="mark1">&lt;body 属性名=属性值 ...&gt; ....... &lt;/body&gt;</p>
+  <div>
+    <table border="1" cellspacing="0" cellpadding="0" width="558">
+      <tr align="center">
+    <td width="149" valign="bottom"><strong>属性</strong></td>
+    <td width="403" valign="bottom"><strong>描述</strong></td>
+  </tr>
+  <tr>
+    <td valign="top">align</td>
+    <td width="403" valign="top">对齐方式 (left | center | right)</td>
+  </tr>
+  <tr>
+    <td valign="top">text</td>
+    <td width="403" valign="top">规定文档中所有文本的颜色</td>
+  </tr>
+  <tr>
+    <td valign="top">bgcolor</td>
+    <td width="403" valign="top">规定文档的背景颜色 </td>
+  </tr>
+  <tr>
+    <td valign="top">background</td>
+    <td width="403" valign="top">规定文档的背景图像 </td>
+  </tr>
+  <tr>
+    <td valign="top">link</td>
+    <td width="403" valign="top">规定文档中未访问链接的默认颜色 </td>
+  </tr>
+  <tr>
+    <td valign="top">alink</td>
+    <td width="403" valign="top">规定文档中活动链接（active link）的的颜色 </td>
+  </tr>
+  <tr>
+    <td valign="top">vlink</td>
+    <td width="403" valign="top">规定文档中已被访问链接的颜色 </td>
+  </tr>
+</table>
+  </div>
+  <p>说明：</p>
+  <ol>
+    <li>
+      为了使页面美丽大方，通常网页背景要尽量选择浅色；</li>
+    <li>
+      以上属性简单认识即可，HTML4中已推荐由css样式替代以上属性。
+    </li>
+    <li>颜色的设置参见<a href="#fp5">HTML对颜色的控制</a></li>
+    </ol>
+  <h4 id="fp4" name="fp4"><strong>marquee标签和滚动公告</strong></h4>
+  <p class="mark1"><u>&lt;marquee 滚动属性设置&gt; 滚动文字&lt;/marquee&gt;</u></p>
+  <div>
+    <table width="567" border="1" cellpadding="0" cellspacing="0">
+      <tr align="center">
+        <td width="140" valign="top"><strong>属性 </strong></td>
+        <td width="421" valign="top"><strong>说明 </strong></td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">behavior</td>
+        <td width="421" valign="top">文字的滚动方式，可取值scroll（默认）、slide（只滚动一次）、alternate（来回交替） </td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">loop</td>
+        <td width="421" valign="top">循环次数设置 </td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">scrollamount</td>
+        <td width="421" valign="top">滚动速度 </td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">scrolldelay</td>
+        <td width="421" valign="top">滚动延迟 </td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">bgcolor</td>
+        <td width="421" valign="top">滚动文字的背景设置 </td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">width</td>
+        <td width="421" valign="top">滚动背景宽度 </td>
+      </tr>
+      <tr>
+        <td width="140" valign="top">height</td>
+        <td width="421" valign="top">滚动背景高度 </td>
+      </tr>
+    </table>
+  </div>
+  <p><strong>说明：</strong></p>
+  <ol>
+    <li>marquee在ie中的表现较好，在有些浏览器中存在兼容性问题。</li>
+    <li>亦可用style属性说明举动公告的前景色、背景色、宽度、高度、字体等。</li>
+    <li>除了文字公告外，图片、超级链接等网页元素也可以滚动。</li>
+  </ol>
+  <p>如：&lt;marquee direction=&quot;left&quot; scrolldelay=&quot;50&quot;&gt;It's my first webpage&lt;/marquee&gt;</p>
+  <div>
+    <marquee style="color:#FFF; background:#006666; width:100%;" direction="left" scrolldelay="20" scrollamount="5">
+      It's my first webpage
+    </marquee>
+  </div>
+  <p name="fp4">&nbsp;</p>
+  <p name="fp4"><a name="fp4" id="fp4"></a></p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  <p>&nbsp;</p> <p>&nbsp;</p>
+</div>
+<div>
+<h3>HTML标题和段落</h3>
+<h4><strong>标题标签</strong>（<strong>&lt;H1&gt;~&lt;H6&gt;</strong>）</h4>
+<p><span class="mark1">&lt;Hn 属性名=属性值&gt; ....... &lt;/Hn&gt;</span></p>
+<div>
+  <div>
+    <table width="89%" border="0" >
+      <tr>
+        <td width="407">&lt;html&gt;<br />
+          &lt;head&gt;<br />
+          &lt;title&gt;HTML各级标题&lt;/title&gt;<br />
+          &lt;/head&gt;<br />
+          &lt;body&gt;<br />
+          HTML中的六级标题&lt;br&gt;<br />
+          &lt;h1 align=&quot;center&quot;&gt;一级标题文字&lt;/h1&gt;<br />
+          &lt;h2&gt;二级标题文字&lt;/h2&gt;<br />
+          &lt;h3&gt;三级标题文字&lt;/h3&gt;<br />
+          &lt;h4&gt;四级标题文字&lt;/h4&gt;<br />
+          &lt;h5 align=&quot;right&quot;&gt;靠右对齐的五级标题文字&lt;/h5&gt;<br />
+          &lt;h6&gt;六级标题文字&lt;/h6&gt;<br />
+          &lt;/body&gt;<br />
+          &lt;/html&gt;<br /></td>
+        <td width="264">六级标题的标签：
+          <ul>
+            <li>h1——一级标题</li>
+            <li>h2——二级标题</li>
+            <li>h3——三级标题</li>
+            <li>h4——四级标题</li>
+            <li>h5——五级标题</li>
+            <li>h6——六级标题</li>
+          </ul>
+          &nbsp;
+          </td>
+      </tr>
+    </table>
+  </div>
+  <p><strong>说明：</strong></p>
+  <ol>
+    <li>标题行独立成行；</li>
+    <li>&lt;h1&gt;~&lt;h6&gt;可用align属性设置标题文字位置。</li>
+    </ol>
+  <h4><strong>居中标签</strong>center</h4>
+  <p>除了通过align属性取值center来设置网页元素居中外，HTML中提供了center标签：</p>
+  <p class="mark1">&lt;center&gt;......&lt;/center&gt;  </p>
+  <h4><strong>段落标签p</strong></h4>
+<p>HTML中的段落如同word中一样，段落结束会自动换行。格式：</p>
+<p class="mark1">&lt;p 属性名=属性值&gt; 段落文本 &lt;/p&gt;</p>
+<p>说明：p标签也有align属性，但在HTML4下也已不推荐使用。</p>
+<h4><strong>换行标签</strong></h4>
+  <p><span class="mark1">&lt;br&gt;</span> -------插入一个简单的换行符</p>
+  <h4>特殊符号的插入 </h4>
+  <p>特殊符号如：&lt;、&nbsp;&nbsp;&nbsp;&nbsp;（空格）、&copy;等，可通过<span class="mark">字符实体</span>输入。<br />
+三部分组成：<span class="mark1">&amp; 实体名 ;</span>  </p>
+  <p style="text-align:center"><strong>常用特殊字符及对应的字符实体</strong></p>
+<div>
+  <table border="1" cellspacing="0" cellpadding="0" width="500">
+    <tr align="center">
+      <td width="57" valign="top"><strong>符号 </strong></td>
+      <td width="99" valign="top"><strong>字符实体 </strong></td>
+      <td width="83" valign="top"><strong>说明</strong></td>
+      <td width="50" valign="top"><strong>符号 </strong></td>
+      <td width="91" valign="top"><strong>字符实体 </strong></td>
+      <td width="106" valign="top"><strong>说明</strong></td>
+    </tr>
+    <tr>
+      <td width="57" valign="top">&nbsp;</td>
+      <td width="99" valign="top">&amp;nbsp;</td>
+      <td width="83" valign="top">空格</td>
+      <td width="50" valign="top">× </td>
+      <td width="91" valign="top">&amp;times;</td>
+      <td width="106" valign="top">乘</td>
+    </tr>
+    <tr>
+      <td width="57" valign="top">“ </td>
+      <td width="99" valign="top">&amp;quot;</td>
+      <td width="83" valign="top">引号</td>
+      <td width="50" valign="top">÷ </td>
+      <td width="91" valign="top">&amp;divide;</td>
+      <td width="106" valign="top">除</td>
+    </tr>
+    <tr>
+      <td width="57" valign="top">&amp;amp;</td>
+      <td width="99" valign="top">&amp;amp;</td>
+      <td width="83" valign="top">&amp;号</td>
+      <td width="50" valign="top">©</td>
+      <td width="91" valign="top">&amp;copy;</td>
+      <td width="106" valign="top">版权</td>
+    </tr>
+    <tr>
+      <td width="57" valign="top">﹤ </td>
+      <td width="99" valign="top">&amp;lt;</td>
+      <td width="83" valign="top">小于</td>
+      <td width="50" valign="top">®</td>
+      <td width="91" valign="top">&amp;reg;</td>
+      <td width="106" valign="top"> 注册商标</td>
+    </tr>
+    <tr>
+      <td width="57" valign="top">﹥ </td>
+      <td width="99" valign="top">&amp;gt;</td>
+      <td width="83" valign="top">大于</td>
+      <td width="50" rowspan="2" valign="top">™ </td>
+      <td width="91" rowspan="2" valign="top">&amp;trade;</td>
+      <td width="106" rowspan="2" valign="top">商标符号 <br />
+        <span class="copyright">（不一定注册）</span></td>
+    </tr>
+    <tr>
+      <td width="57" valign="top">§ </td>
+      <td width="99" valign="top">&amp;sect;</td>
+      <td width="83" valign="top">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<p>注意：实体名字区分大小写。</p>
+<h5><strong>练习：制作如左下图所示的“唐诗一首”网页。</strong></h5>
+<div>
+  <table width="80%" border="0" cellpadding="2">
+    <tr>
+      <td align="center"><img src="images/page1.gif" alt="poem" width="249" height="204" border="1" /></td>
+      <td><ul>
+        <li>需在右下方加入&copy;的标志</li>
+        <li>诗句间用&lt;br&gt;分行显示</li>
+        <li>用&lt;hr&gt;标签插入水平线</li>
+      </ul>
+        <blockquote>
+          <p>用法如：<span class="mark">&lt;hr width=&quot;200px&quot;/&gt;</span></p>
+        </blockquote></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="left"><hr />
+        <p>网页版权通常的形式：</p>
+        <ul>
+          <li> ©2001-2017 Comsenz Inc.</li>
+          <li> ©2017 Georgia Institute of Technology </li>
+          <li> Copyright© 2017 Sohu.com Inc. All Rights Reserved. </li>
+          <li>Copyright© 1999-2017, ctrip.com. All rights reserved.<a name="fp5" id="fp5"></a>  </li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+</div>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+&nbsp;
+<h3>HTML对颜色的控制</h3>
+<p>颜色能赋予设计更多的视觉乐趣和美感，亦可加强设计元素的组织。HTML网页可以是色彩丰富的，好多标签涉及到颜色的设置。</p>
+<h4><strong>颜色设定方法</strong></h4>
+<ul>
+  <li>颜色名，如red、green等。</li>
+  <li>十六进制颜色值#rrggbb，如#ffffff、#ff0000等。</li>
+</ul>
+<h4><strong>易记的颜色名</strong></h4>
+<table width="80%" border="0" cellpadding="2" class="tc">
+  <tr>
+    <td width="33%" bgcolor="red" class="tcb">red</td>
+    <td width="34%" bgcolor="pink" class="tcb">pink</td>
+    <td width="33%" bgcolor="darkred" class="tcw">darkred</td>
+  </tr>
+  <tr>
+    <td bgcolor="gold" class="tcb">gold</td>
+    <td bgcolor="orange" class="tcb">orange</td>
+    <td bgcolor="darkorange" class="tcw">darkorange</td>
+  </tr>
+  <tr>
+    <td bgcolor="yellow" class="tcb">yellow</td>
+    <td bgcolor="greenyellow" class="tcb">greenyellow</td>
+    <td bgcolor="yellowgreen" class="tcw">yellowgreen</td>
+  </tr>
+  <tr>
+    <td bgcolor="green" class="tcb">green</td>
+    <td bgcolor="lightgreen" class="tcb">lightgreen</td>
+    <td bgcolor="darkgreen" class="tcw">darkgreen</td>
+  </tr>
+  <tr>
+    <td bgcolor="blue" class="tcb">blue</td>
+    <td bgcolor="lightblue" class="tcb">lightblue</td>
+    <td bgcolor="darkblue" class="tcw">darkblue</td>
+  </tr>
+  <tr>
+    <td bgcolor="cyan" class="tcb">cyan</td>
+    <td bgcolor="lightcyan" class="tcb">lightcyan</td>
+    <td bgcolor="darkcyan" class="tcw">darkcyan</td>
+  </tr>
+  <tr>
+    <td bgcolor="white"><span class="tcb">white</span></td>
+    <td bgcolor="snow" class="tcb">snow</td>
+    <td bgcolor="whitesmoke"><span class="tcb">whitesmoke</span></td>
+  </tr>
+  <tr>
+    <td bgcolor="gray" class="tcb">gray</td>
+    <td bgcolor="darkgray" class="tcb">darkgray</td>
+    <td bgcolor="dimgray" class="tcw">dimgray</td>
+  </tr>
+</table>
+<h4><strong>网页安全色</strong></h4>
+<p>网页安全色是当红色（Red）、绿色（Green）、蓝色（Blue）为0、51、102、153、204、255时构成的颜色组合。共 216 种颜色（其中彩色为210种，非彩色为6种）。</p>
+<h4><strong>网页的配色</strong></h4>
+<div><table width="100%" border="0" cellpadding="0">
+  <tr>
+    <td><ul>
+      <li>采用饱和色，吸引注意力</li>
+      <li>采用去饱和色，效果和效率至上</li>
+      <li>去饱和+明亮，友善且专业</li>
+      <li>去饱和+暗沉，严肃且专业</li>
+      <li>浅灰色总是安全的选择</li>
+    </ul></td>
+    <td><img src="images/color-wheel.gif" width="208" height="208" alt="color wheel" /></td>
+  </tr>
+</table>
+</div>
+<p>网页配色需要经久的积累，不断地调试。用心感悟，提高自己的审美观。</p>
+<p>初学时也可借鉴<a href="http://www.mb5u.com/tool/peise/" target="_blank">配色工具</a>。</p>
+<h5><strong>练习：挑选自己喜欢的颜色修改poem.html。</strong></h5>
+<p><a href="http://www.ddcat.net/sheji/peise/3/menu03_01.htm" target="_blank">配色手册</a><a name="end" id="end"></a></p>
+</div>
+  <p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+   <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div>
+  <h3>网页从临摹到设计</h3>
+  <h4>网页临摹要点</h4>
+  <div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="vertical-align:top">
+      <tr>
+        <td><p><img src="images/web3.jpg" alt="webpage" width="450" /></p>
+          <p><strong>分组名称可约定为：</strong></p>
+          <ul>
+            <li> Header</li>
+            <li>Body</li>
+            <li>footer</li>
+            <li>Navigation Bar</li>
+            <li>Background</li>
+          </ul>
+          <p><strong>组中组的名称可设为：</strong></p>
+          <ul>
+            <li> 横向：left、right、center</li>
+            <li> 纵向：top、middle、bottom </li>
+          </ul></td>
+        <td><img src="images/1.jpg" alt="1" width="450" /></td>
+      </tr>
+    </table>
+  </div>
+  <h4>网页临摹解析</h4>
+  <p><img src="images/umich.png" border="0" /></p>
+  <h4>网页临摹练习</h4>
+找一张悦目并相对简单的网页，用Photoshop进行网页临摹。
+<p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><s>Last</s></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson02/index.html">Next</a></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p class="copyright">©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+  </div>
+</div>
+</body>
+</html>

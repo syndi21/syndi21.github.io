@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+.menu1{
+	line-height:40px;
+	vertical-align:middle;
+	text-align:center;
+	font-weight:bold;
+}
+.menu1 a {
+	font-size: 20px;
+	color: #000;
+	text-decoration:none;
+}
+.menu1 a:hover {
+	text-decoration: underline;
+	color: #F00;
+}
+.menu1 a:active {
+	color: #FF0;
+	font-size:22px;
+}
+.menu2{
+	line-height:48px;
+	vertical-align:middle;
+	text-align:center;
+	font-weight:bold;
+}
+.menu2 a {
+	font-size: 20px;
+	color: #000;
+	display: block;
+	width: 150px;
+	background: url(images/b1.png) no-repeat;
+	text-decoration:none;
+}
+.menu2 a:hover {
+	text-decoration: underline;
+	color: #FFF;
+	background:url(images/b2.png) no-repeat;
+}
+.ul0{
+	list-style-type:none;
+	font-size:20px;
+	text-align:center;
+	vertical-align:middle;
+}
+.ul0 a{
+	width:150px;
+	height:35px;
+	display:block;
+	border:outset 3px #86CA92;
+	color:#000;
+	line-height:35px;
+	background-color:#86CA92;
+	text-decoration:none;
+}
+.ul0 a:hover{
+	color:#F00;
+	background-color:#0F0;
+}
+.ul1{
+	width:800px; /*new*/
+	list-style-type:none;
+	font-size:20px;
+	text-align:center;
+	vertical-align:middle;
+	font-family: "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC", "微软雅黑", Verdana, Helvetica, sans-serif, SimHei;
+}
+.ul1 a{
+	width:145px;
+	height:35px;
+	display:block;
+	float:left; /*new*/
+	line-height:35px;
+	border:outset 3px #86CA92;
+}
+.ul1 a:link{
+	color:#000;
+	background-color:#86CA92;
+	text-decoration:none;
+}
+.ul1 a:hover{
+	color:#F00;
+	background-color:#0F0;
+}
+.ul2{
+	list-style-type:none;
+	text-align:center;
+}
+.ul2 li{
+	width:180px;
+	height:40px;
+	line-height:40px;
+	border:solid 1px #F00;
+}
+
+.ul_menu1{
+	list-style-type: none;
+	width:700px;
+	font-size:20px;
+}
+.ul_menu1 a{
+	text-decoration:none;
+	float:left;
+	color:#FFF;
+	width:120px;
+	background:#006;
+	height:40px;
+	display:block;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	border-right: 1px inset #FFF;
+}
+.ul_menu1 a:hover{
+	background:#0CF;
+	color:#000;
+}
+.ul_menu2{
+	list-style-type: none;
+	font-size:20px;
+}
+.ul_menu2 a{
+	text-decoration:none;
+	color:#FFF;
+	width:160px;
+	height:40px;
+	display:block;
+	background:#006;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	border-top: 1px solid #FFF;
+}
+.ul_menu2 a:hover{
+	background:#0CF;
+	color:#000;
+}
+

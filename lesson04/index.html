@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第四回 耶鲁大学主页仿制</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+
+.tt td{
+	border:1px #378488 dashed;
+	line-height:28px;
+}
+.tt {
+	border:2px solid #000;
+	border-collapse:collapse;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="top">
+<div id="logo">第四回 耶鲁大学新闻页局部仿制</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">页面布局分析</a>
+	  <a href="#fp2" >盒型模型与边距</a>
+	  <a href="#fp3" class="">新闻热点部分制作</a>
+	  <a href="#fp4" >The Yale Farm部分制作</a><a href="#fp5" class="">灰条部分制作</a><a href="#fp6" class="">规范格式和点缀线条</a>
+
+</div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>			<!-- <span style="left: 565.5px;" id="marker"></span> -->
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+ <p>&nbsp;</p>
+  <h3>&nbsp;</h3>
+<h3>页面主体布局分析</h3>
+<h4>耶鲁大学新闻首页主体部分</h4>
+<p align="left"><a href="http://news.yale.edu/" target="_blank"><img src="images/Yalenews.jpg" width="1000" alt="yale university" /></a></p>
+<h4>布局分析</h4>
+<table width="95%" border="0" cellspacing="0">
+  <tr>
+    <td width="65%" height="287">
+    
+      <div style="padding:15px 30px; background:#ccc">
+    <table width="100%" height="235" border="1" cellspacing="0">
+      <tr>
+        <td width="80%" height="79" align="center" bgcolor="#B9D1F0"><h2>新闻热点</h2>
+          <p>(图、文、链接）</p></td>
+        </tr>
+      <tr>
+        <td height="93" align="center" bgcolor="#E8FFF3"><h2>The Yale Farm</h2></td>
+        </tr>
+      <tr>
+        <td align="center" bgcolor="#CCCCCC"><h4>In the media</h4>
+          <h4>Featured Event</h4></td>
+        </tr>
+    </table>
+    </div>
+    </td>
+    <td width="44%"><ol>
+      <li>三个区域之间适当留距；</li>
+      <li>每个区域用一个表格来具体布局；</li>
+    </ol>      </td>
+  </tr>
+</table>
+<h4>页面属性设置</h4>
+<p>页面属性设置：字体、字体尺寸、行间距、默认链接</p>
+<p><a name="fp2" id="fp2"></a></p>
+<p>&nbsp;</p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p>&nbsp; </p>
+
+  <h3>盒型模型与边距</h3>
+  <h4>div盒子模型</h4>
+  <p class="mark1">插入-（布局）插入div标签</p>
+  <ul>
+    <li>通常div盒子会单独地占据一行</li>
+    <li>div盒子与table可以混合布局</li>
+    <li>通过margin与padding可对div盒子设置外边距与内边距</li>
+  </ul>
+  <h4>margin与padding</h4>
+  <table width="100%" border="0" align="center" cellspacing="0">
+    <tr>
+      <td width="58%" valign="middle"><img src="images/Box.png" width="510" height="296" /></td>
+      <td width="42%"><p><img src="images/Box1.png" height="296" /></p></td>
+    </tr>
+    <tr>
+      <td><p><span class="mark"><strong>margin</strong></span><strong>：控制元素与外边另一个元素间的距离。</strong><br />
+        对应有margin-top、margin-right、margin-bottom、margin-left</p>
+        <ul >
+          <li><span class="mark1">margin: 10px 20px 10px 20px; </span><br />
+            ——分别与顶边、右边、底边与左边的距离</li>
+          <li><span class="mark1">margin: 10px 20px;</span> ——意义同上。</li>
+          <li><span class="mark1">margin:0 0;</span> ——无距离嵌入另一个元素</li>
+          <li><span class="mark1">margin:0 auto;</span>——水平自适应居中，与上下边距离为零</li>
+        </ul></td>
+      <td><p><span class="mark"><strong>padding</strong></span><strong>：控制元素与其中填充内容的距离。</strong></p>
+        <p><img src="images/1.jpg" width="200" height="200" /></p></td>
+    </tr>
+  </table>
+  <p class="mark">说明：除了div外，很多网页元素可设边距，如body、表格、各种标题、列表等。
+  </p>
+  <h5>练习：这是一个Div里嵌套另一个Div，根据目测的间距设置合适的margin和padding。 </h5>
+<p><img src="images/divconfig.jpg" alt="" width="80%" /></p>
+  <blockquote><p><a name="fp3" id="fp3"></a>     
+</p></blockquote>
+    <p></p>
+  
+  <p></p>
+  <p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  <p>&nbsp;</p><br />
+    <h3>新闻热点部分制作</h3>
+<h4>布局分析</h4>
+    <table width="80%" height="300" border="3" cellspacing="0" style="text-align:center">
+      <tr>
+        <td width="40%" colspan="3" rowspan="2"><p>热点新闻</p></td>
+        <td width="20%" height="150">News1</td>
+        <td width="20%">News2</td>
+      </tr>
+      <tr>
+        <td>News3</td>
+        <td>News3</td>
+      </tr>
+    </table>
+<p>可采用表格进行如此布局。</p>
+<h4>布局实现</h4>
+<ul>
+  <li>插入2X3的表格（可设宽度为1000px)，合并相关单元格，设置第一列列宽为50%，后两列分别是25%</li>
+  <li>在每个td单元格中插下一个外间距为10px、内容置顶端的div盒子</li>
+  <li>在div盒子中插入图片</li>
+  <li>在div盒子中插入带链接的文字（可设为标题3）</li>
+  <li>对div盒子画边框线
+    <blockquote> <span class="mark">css样式代码</span>：<br />border:1px solid #dddddd;    </blockquote>
+    </li>
+  
+  <li>对h3进行内边距设置</li>
+  <li>根据不同的情况对盒内链接进行设置（a和a:hover）</li>
+</ul>
+<h5>练习：制作新闻热点部分的页面区域。</h5>
+<h4><span class="abc"><a name="fp4" id="fp4"></a></span></h4>
+<p>&nbsp;</p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  <p>&nbsp;</p>
+<h3>“The Yale Farm”部分制作</h3>
+<h4>布局分析</h4>
+<table width="80%" border="1" cellspacing="0">
+  <tr>
+    <td style="width:80%" height="67" align="center" bgcolor="#FFFFFF">标题、线条、链接文字</td>
+    <td align="center" bgcolor="#FFFFFF">图</td>
+  </tr>
+</table>
+<h4>布局实现</h4>
+<ul>
+  <li>插入1 X 2的表格（因是对表格边框画线，为对齐起见，得减去两边的间距共20px，所以表格可设宽度为980px)，设置第二列列宽为260px</li>
+  <li>在每个td单元格中插下一个带外间距的div盒子</li>
+  <li>左边部分，在div盒子中插入标题、线条、带链接的文字</li>
+  </ul>
+<blockquote>
+  <p><span class="mark">参考html代码</span>（需要设计css样式 .yalefarm、.yalefarm p、.yalefarm a、.yalefarm a:hover）<br />
+    &lt;div class=&quot;yalefarm&quot;&gt;<br />
+    &lt;p&gt;The Yale Farm&lt;/p&gt;<br />
+    &lt;div style=&quot;width:50px; height:30px; border-top:1px #888 solid&quot; &gt;&lt;/div&gt;<br />
+    &lt;a href=&quot;#&quot;&gt;The Yale Farm&lt;/a&gt; produces dozens of varieties of vegetables, fruits, herbs, and flowers, and is home to free-range laying hens and honeybees.<br />
+    &lt;/div&gt;</p>
+</blockquote>
+<ul>
+  <li>右边部分，在div盒子中插入图片</li>
+</ul>
+<blockquote>
+  <p><span class="mark">参考html代码</span>（需要设计css样式 .farm）<br />
+    &lt;div class=&quot;farm&quot;&gt;<br />
+    &lt;img src=&quot;images/box-yale-farm.jpg&quot; width=&quot;200&quot; height=&quot;135&quot; /&gt;<br />
+    &lt;/div&gt;</p>
+</blockquote>
+<h4><a name="fp5" id="fp5"></a></h4>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  &nbsp;<p></p>
+<p></p>
+  <p>&nbsp;</p>
+  <h3>灰条部分制作</h3>
+  <h4>布局分析</h4>
+  <div style="background:#999; height:200px; text-align:center; padding:30px;">
+    <table width="80%" border="2" cellspacing="0" cellpadding="0" style="background:#FFF">
+      <tr>
+        <td width="259" height="44" align="center" style="width:50%">标题一</td>
+        <td colspan="2" align="center">标题二</td>
+      </tr>
+      <tr>
+        <td rowspan="3" align="center">小标题和链接文字</td>
+        <td width="30" height="46" align="center" style="width:30px">Date</td>
+        <td width="227" align="center">Content</td>
+      </tr>
+      <tr>
+        <td height="51" align="center">Date</td>
+        <td align="center">Content</td>
+      </tr>
+      <tr>
+        <td height="51" align="center">Date</td>
+        <td align="center">Content</td>
+      </tr>
+    </table>
+  &nbsp;</div>
+  <h4>布局实现</h4>
+  <ul>
+    <li>用满屏宽、灰色背景、内容居中、带上下内边距的div中套放一个表格</li>
+  </ul>
+  <blockquote>
+    <p><span class="mark">参考Html代码</span><br />
+      &lt;div class=&quot;greybar&quot;&gt;<br />
+      &lt;table width=&quot;980&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;<br />......<br />&lt;/table&gt;<br />&lt;/div&gt;
+    </p>
+  </blockquote>
+  <ul>
+    <li>表格中的两列各占50%宽</li>
+    <li>对标题行可设置css样式（字体、尺寸、颜色、行间距等）</li>
+  </ul>
+  <blockquote>
+    <p><span class="mark">参考Html代码</span><br />
+      &lt;tr class=&quot;title&quot;&gt;<br />
+&lt;td style=&quot;width:50%&quot;&gt;In the Media&lt;/td&gt;<br />
+&lt;td colspan=&quot;2&quot;&gt;Featured Events&lt;/td&gt;<br />
+&lt;/tr&gt;</p>
+  </blockquote>
+  <ul>
+    <li>左边小标题得设css样式（上边距、字体颜色 、字母间距、自动转大写等）</li>
+  </ul>
+  <blockquote> 
+    <p><span class="mark">参考Html代码</span><br />
+      &lt;div class=&quot;greybar_t&quot;&gt;impact on record&lt;/div&gt;</p>
+  </blockquote>
+  <ul>
+    <li>日期单元格可设固定像素宽度，月和日分别放在一个div盒子中</li>
+  </ul>
+  <blockquote> <span class="mark">参考Html代码</span>（月份和日期分别设置css样式）<br />
+&lt;td  style=&quot;width:50px&quot;&gt;<br />&lt;div class=&quot;month&quot;&gt;mar&lt;/div&gt;<br />&lt;div class=&quot;date&quot;&gt;31&lt;/div&gt;<br />&lt;/td&gt; 
+<blockquote>
+  <p id="fp6" name="fp6"><a name="fp6" id="fp6"></a></p>
+</blockquote>
+<p>&nbsp;</p>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  </blockquote>
+<h3>规范格式与点缀线条</h3>
+  <h4>规范格式</h4>
+  <ol>
+    <li>页面有效部分宽度可设为1000px（包括间距），两旁留白；</li>
+    <li>文字内容的字体颜色color为: #222222；</li>
+    <li>图片新闻下链接字体颜色color为: #222222，鼠标经过时的颜色为：#286dc0；</li>
+    <li>第三部分灰色背景色是#f9f9f9；</li>
+    <li>灰条上标题的颜色是#00356b；</li>
+    <li>灰条上标题的字体是Georgia, &quot;Times New Roman&quot;, Times, serif;</li>
+    <li>灰条上日期的字体是Georgia, &quot;Times New Roman&quot;, Times, serif;</li>
+    <li>概览页面应同被仿制网页在布局、内容、细节上大致相同。</li>
+  </ol>
+  <h4><strong>用border样式绘制线条</strong></h4>
+  <table width="60%" border="0" cellspacing="0">
+    <tr>
+      <td width="35%" style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+      <td width="9%" rowspan="8">&nbsp;</td>
+      <td width="8%" rowspan="8" style="border-left:#00F dashed 5px;">&nbsp;</td>
+      <td width="8%" rowspan="8" style="border-left:dotted 1px #693;">&nbsp;</td>
+      <td width="10%" rowspan="8" style="border-left:#0FF groove 8px">&nbsp;</td>
+      <td width="30%" rowspan="8" style="border-left:#000 double 6px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#F00 solid 1px;">&nbsp;</td>
+    </tr>
+  </table>
+  <h4><strong>border样式设置</strong></h4>
+  <p> &lt;div style=&quot;border-bottom:1px #F00 solid;&quot;&gt;.....&lt;/div&gt;</p>
+  <ul>
+    <li>border-top：顶边边框样式</li>
+    <li>border-left：左边边框样式</li>
+    <li>border-right：右边边框样式</li>
+    <li>border-bottom：底边边框样式</li>
+  </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson03/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson05/index.html">Next</a></td>
+    </tr>
+  </table>
+  &nbsp;<p></p>
+
+&nbsp;
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+  &nbsp;<p></p>
+  <p></p>
+&nbsp;<p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

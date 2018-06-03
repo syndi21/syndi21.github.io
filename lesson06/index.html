@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第六回 CSS超链接与网站导航</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+@import url("linkStyle.css");
+
+</style>
+</head>
+
+<body>
+<div id="top">
+<div id="logo">第六回 CSS超链接与网站导航</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">关于网站导航</a>
+	  <a href="#fp2" class="">CSS链接样式</a>
+	  <a href="#fp3" class="">项目列表导航</a>
+	  <a href="#fp4" class="">YaleCS页面完善</a>
+</div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>	
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+<div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<h3>关于网站导航</h3>
+<p>导航栏是网站最重要的设计元素：</p>
+<ul>
+  <li>引导用户访问首页之后的页面</li>
+  <li>给用户方位感的奇妙工具<br />
+  </li>
+</ul>
+<p>一个网站的不同页面使用同一导航条，方便不同页面之间的跳转之外，也是网站风格统一的标识。</p>
+<h4>网站导航一览</h4>
+<div align="center">
+  <p><img src="images/bar3.gif" alt="bar3" width="100%" /></p>
+<p><img src="images/bar2.gif" alt="bar2" width="830" height="49" /></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td rowspan="2" style="padding-left:40px"><img src="images/ex1.png" width="218" height="343" alt="ex1" /></td>
+      <td height="85" colspan="2" align="center" valign="top"><p><img src="images/ex2.png" alt="ex2" width="430" height="32"/></p>
+        <p><img src="images/ex5.png" width="606" height="28" alt="ex5" /></p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><img src="images/yaleSideBar1.png" width="187" height="232" alt="ex3" /></td>
+      <td align="center" valign="top"><img src="images/ex4.png" width="201" height="205" alt="ex4" /></td>
+    </tr>
+  </table>
+</div>
+<h4>网站导航的设计</h4>
+<ol>
+  <li>确定网站所有内容，正确分析和组织成符合逻辑的、高效的结构。</li>
+  <li>导航栏中的项目不宜过多
+    <ul  style="list-style-type:square">
+      <li>导航栏中的链接项数5~8为最佳，也正好适合网页宽度；</li>
+      <li>太多的链接选择会影响浏览者判断，可读性变差，可能会超出页面的宽度。</li>
+      </ul>
+    </li>
+  <li>项目用语简洁
+    <ul style="list-style-type:square">
+      <li>导航栏中使用精确明了的词语。避免过长。</li>
+      <li>尽量使用约定俗成的词语，比如“联系我们”，而不用“取得联系”。</li>
+      </ul>
+    </li>
+  <li>正确排布
+    <ul style="list-style-type:square">
+      <li>从左到右的阅读习惯，依栏目的重要性或内在逻辑顺序从左到右的排布；</li>
+      <li>导航栏带见安排在网页横幅上，也可在页面侧边安排竖式的导航条。<a name="fp2" id="fp2"></a></li>
+    </ul>
+    </li>
+</ol>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<h3>CSS链接样式</h3>
+<h4>CSS超链接设置</h4>
+<p><strong>设置页面CSS超链接样式</strong></p>
+<div>
+  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="76%"><img src="images/css-link-property.gif" width="605" height="252" alt="css link" /></td>
+      <td width="24%" align="left"><ul>
+        <li>链接字体</li>
+        <li>字体尺寸</li>
+        <li>链接颜色</li>
+        <li>变换图像链接</li>
+        <li>已访问链接</li>
+        <li>活动链接</li>
+        <li>下划线样式</li>
+      </ul></td>
+      </tr>
+  </table>
+</div>
+
+<p><strong>CSS超链接标记</strong></p>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top">a {<br />
+      font-size: 16px;<br />
+      color: #000;<br />
+      }<br />
+      a:link {<br />
+      text-decoration: none;<br />
+      }<br />
+      a:visited {
+      <br />
+color:#666;<br />
+      text-decoration: none;<br />
+      }<br />
+      a:hover {<br />
+      text-decoration: underline;<br />
+      }<br />
+      a:active {<br />
+      text-decoration: none;<br />
+      color: #FFF;<br />
+      }</td>
+    <td valign="top"><p>a：关于超链接字体颜色等基本的设置</p>
+<p>        CSS提供了四种a对象的伪类：</p>
+      <ul>
+        <li>        a:link&nbsp;{  }——未访问过的链接样式</li>
+        <li> a:visited&nbsp;{  }——链接访问过后的样式</li>
+        <li> <span class="mark">a:hover&nbsp;{  }</span>——鼠标经过时的超链接样式</li>
+        <li> <span class="mark1">a:active&nbsp;{  }</span>——鼠标点击时的链接样式</li>
+        </ul>
+      <p align="left">下划线说明：</p>
+      <ul>
+        <li>text-decoration: none;  无下划线</li>
+        <li>text-decoration: underline; 带下划线</li>
+        </ul>
+      <p align="left">注意顺序：“爱恨原则”（LoVe/HAte），即四种伪类的首字母:LVHA。 </p></td>
+  </tr>
+  </table>
+<h5>练习1：用表格布局，制作如下样式超链接导航。</h5>
+<table width="600" border="0" cellpadding="0" cellspacing="0" class="menu1">
+  <tr>
+    <td width="120"><a href="#">Home</a></td>
+    <td width="120"><a href="#">Games</a></td>
+    <td width="120"><a href="#">Puzzles</a></td>
+    <td width="120"><a href="#">Tell me</a></td>
+    <td><a href="#">Activities</a></td>
+  </tr>
+</table>
+<p align="center"></p>
+
+<h4>图像翻转链接</h4>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><p><strong>设计步骤</strong></p>
+      <ol>
+        <li>准备两个同尺寸的翻转图像；</li>
+        <li>在a标签选择器中设置：
+          <ul>
+            <li>链接文字基本属性</li>
+            <li>显示为block方式</li>
+            <li>block的大小（参考图像大小）</li>
+            <li>背景图像设置</li>
+          </ul>
+          </li>
+        
+        <li>a:link设置未访问过的链接样式；</li>
+        <li>a:hover设置鼠标经过时的链接样式：
+          <ul>
+            <li>有无下划线</li>
+            <li>文字尺寸与颜色</li>
+            <li>背景图像设置</li>
+            </ul>
+        </li>
+      </ol>      </td>
+    <td><p>.menu2{<br />
+      字体风格、字体尺寸、文本对齐等设置<br />
+      }<br />
+        .menu2 a {<br />
+        font-size: 20px;<br />
+        color: #000;<br />
+        <span class="mark1">display: block;</span><br />
+        height: 48px;<br />
+        width: 150px;<br />
+        <span class="mark">background: url(images/b2.gif) no-repeat;</span><br />
+        }<br />
+        .menu2 a:hover {<br />
+        text-decoration: underline;<br />
+        color: #FFF;<br />
+        <span class="mark">background: url(images/b1.gif) no-repeat;</span><br />
+        }</p></td>
+  </tr>
+</table>
+<h5>练习2：设计一组图像翻转超链接（参考样式如下）。</h5>
+<table  class="menu2">
+  <tr>
+    <td><a href="#">Home</a></td>
+    <td><a href="#">Games</a></td>
+    <td><a href="#">Puzzles</a></td>
+    <td><a href="#">Tell me</a></td>
+    <td><a href="#">Activities</a></td>
+  </tr>
+</table>
+<p><a name="fp3" id="fp3"></a></p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<h3>项目列表导航</h3>
+<h4><strong>项目列表</strong></h4>
+<p>HTML提供了项目列表：顺序式列表&lt;ol&gt;和无顺序列表&lt;ul&gt;。当引入CSS后，项目列表被赋予了很多新的属性，甚至超越了它最初设计时的功能。</p>
+<p><strong>项目列表</strong></p>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><p class="mark1">顺序列表</p></td>
+    <td colspan="2"><span class="mark1">无顺序列表</span></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#E8FFFF"><ol>
+      <li>薰衣草</li>
+      <li>罗勒</li>
+      <li>百里香</li>
+      <li>鼠尾草</li>
+      <li>薄荷 </li>
+    </ol></td>
+    <td valign="top" bgcolor="#E8FFFF">&lt;ol&gt;<br />
+&lt;li&gt;薰衣草&lt;/li&gt;<br />
+&lt;li&gt;罗勒&lt;/li&gt;<br />
+&lt;li&gt;百里香&lt;/li&gt;<br />
+&lt;li&gt;鼠尾草&lt;/li&gt;<br />
+&lt;li&gt;薄荷 &lt;/li&gt;<br />
+&lt;/ol&gt;</td>
+    <td valign="top" bgcolor="#FFFFDF"><ul>
+      <li>香草        </li>
+      <li>薰衣草</li>
+      <li>薄荷 </li>
+      <li>其他植物</li>
+    </ul>      </td>
+    <td bgcolor="#FFFFDF">&lt;ul&gt;<br />
+&lt;li&gt;香草<br />
+&lt;li&gt;薰衣草&lt;/li&gt;<br />
+&lt;li&gt;薄荷 &lt;/li&gt;<br />
+&lt;li&gt;其他植物&lt;/li&gt;<br />
+&lt;/ul&gt;</td>
+  </tr>
+</table>
+<p><strong>列表符号的更改</strong></p>
+<ul>
+  <li>list-style-type属性——修改项目列表符号</li>
+  <li>  List-style-image属性——图像符号
+  </li>
+</ul>
+<p align="center"><img src="images/list-style-type.png" width="667" height="229" alt="list-style-type" /></p>
+<table width="90%" border="0" cellpadding="0" cellspacing="0"  align="center">
+  <tr>
+    <td width="24%" valign="top"><img src="images/list1.gif" alt="list1" width="135" height="270" align="right" /></td>
+    <td width="34%" valign="middle"><ul class="ul2">
+      <li>薰衣草</li>
+      <li>百里香</li>
+      <li>迷迭香</li>
+      <li>鼠尾草</li>
+      <li>薄荷</li>
+    </ul></td>
+    <td width="42%"><span class="mark1">.ul</span>{<br /><small>
+list-style-type:none;<br />
+text-align:center;<br /></small>
+}<br />
+<span class="mark1">.ul li</span>{<br /><small>
+width:180px;<br />
+height:40px;<br />
+display:block;<br />
+border:solid 1px #F00;<br /></small>
+}</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h4>项目列表导航</h4>
+<p><strong>竖式导航条</strong></p>
+<table width="900" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><ul class="ul_menu2" >
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Puzzles</a></li>
+      <li><a href="#">Tell me</a></li>
+      <li><a href="#"> Activities </a></li>
+    </ul></td>
+    <td><p>设计步骤：</p>
+      <ol>
+        <li>项目列表css样式<span class="mark">.bar</span>设置（项目符号等）；</li>
+        <li>给每项设置超级链接；</li>
+        <li>可用<span class="mark">.bar li</span>设置项目样式（块显示、块尺寸或内间距、背景色等）；</li>
+        <li><span class="mark">.bar li a</span>进一步设置链接样式（块显示、链接字体尺寸与对齐方式等）；</li>
+        <li><span class="mark">.bar li a:hover</span>设置鼠标经过时的链接样式（背景色、字体）。</li>
+      </ol>      </td>
+  </tr>
+</table>
+<p><strong>橫向导航栏</strong></p>
+<p>大多数的网站导航是水平方向上显示的，即为橫向的导航栏。 <br />
+  <span class="mark1">横竖转换步骤</span>：</p>
+<ul>
+  <li><span class="mark">.bar</span>设置整个导航栏的宽度</li>
+  <li><span class="mark">.bar li</span>调整每个链接块的宽度，设置float为left</li>
+</ul>
+<table width="80%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><ul class="ul_menu1">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Puzzles</a></li>
+      <li><a href="#">Tell me</a></li>
+      <li><a href="#"> Activities </a></li>
+    </ul></td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+<h5>练习3：用项目列表制作竖式和横向的网站导航。<a name="fp4" id="fp4"></a></h5>
+<p><a href="#fp1"><img border="none" src="../files/toTop.gif" alt="Top" width="40" height="40" align="right" /></a></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h3>YaleCS页面完善</h3>
+  <ul>
+    <li>横幅导航栏由项目列表制作</li>
+    <li>可以忽略右上角的search框 </li>
+    <li>布局和制作可参考第七回</li>
+  </ul>
+  <h4><a href="http://news.yale.edu/" target="_blank"><img src="images/Yalecs.jpg" alt="" width="100%" border="0" /></a></h4>
+  <p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson05/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson07/index.html">Next</a></td>
+      </tr>
+  </table>
+  &nbsp;<p></p>
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+</div>
+</body>
+</html>

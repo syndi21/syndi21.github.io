@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="shortcut icon"/>
+<title>十二回 网站的测试与发布</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+.tt tr {
+	line-height:30px;
+}
+.tt td {
+	border:1px solid #378488;
+}
+.tt th {
+	border:1px solid #378488;
+}
+.tt {
+	color: #333;
+	background-color: #f7f7ff;
+	border-collapse:collapse;
+	border-color: #3C0;
+}
+-->
+</style>
+</head>
+<body>
+<div id="top">
+  <div id="logo">十二回 网站的测试与发布</div>
+  <div id="menu"> <a href="#fp1" class="active">网站的建立与优化</a>
+   <a href="#fp2"  class="">网站的本地测试</a>
+    <a href="#fp3"  class="">申请空间与域名</a> 
+    <a href="#fp4"  class="">网站上传发布</a> 
+    <a href="#fp5"  class="">网站制作实训</a></div>
+  <!-- <span style="left: 565.5px;" id="marker"></span> -->
+  <div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>
+</div>
+<div class="content"> 
+  <p><a name="fp1" id="fp1"></a></p>
+  <div style=" height:75px"></div>
+  <h3>网站的建立与优化</h3>
+  <h4>网站的建立</h4>
+  <table width="80%" border="0" cellpadding="0" cellspacing="0" class="tt">
+    <tr>
+      <th width="17%">步骤</th>
+      <th width="83%">说明</th>
+    </tr>
+    <tr>
+      <td>网站定位</td>
+      <td>选择网站主题，考察浏览者定位</td>
+    </tr>
+    <tr>
+      <td>收集素材</td>
+      <td>收集相关的文字、图像、声音等<br />
+        并对文字进行编辑修改，对图像进行处理加工</td>
+    </tr>
+    <tr>
+      <td>规划栏目</td>
+      <td><p>提纲挈领，清晰导航 <br />
+          网站地图（<a href="http://www.baidu.com/more/" target="_blank">百度</a>）</p>
+        <p><img src="images/map1.png" width="524" height="516" alt="map" /><br />
+        </p></td>
+    </tr>
+    <tr>
+      <td>页面方案</td>
+      <td>logo、标准色彩、标准字、导航条和首页布局等<br />
+        可用PS绘制页面效果图</td>
+    </tr>
+    <tr>
+      <td>页面制作</td>
+      <td><p><span class="mark1">确定页面大小</span>：如宽度基准1024时可设998，内容自动居中<br />
+          <span class="mark1">设计版面布局</span>：是否用框架？页面表格布局 <br />
+          <span class="mark1">制作首页</span>：导航栏制作、banner制作、首页其他元素制作<br />
+          <span class="mark1">制作其他页面</span>：制作各级页面的banner（存成模板、从模板建立）、对各个页面进行内容完善</p></td>
+    </tr>
+  </table>
+  <h4>网站文件夹结构</h4>
+  <p> 网站文件夹结构原则：<span class="mark">以最少层次提供最清晰合理的文件夹结构</span>。这样方便管理，浏览器的路径也保持较短。 </p>
+  <ol>
+    <li>本地建立一个网站总文件夹，网站中的所有文件分类存放在该文件夹下；</li>
+    <li>总文件夹下按文件类别分类，设子文件夹。如：
+      <ul>
+        <li>images——图像文件</li>
+        <li>css（或style）——css样式文件</li>
+        <li>media——动画或多媒体文件</li>
+        <li>js（或script）——JavaScript脚本程序</li>
+        <li>二级页面分类文件夹（如各类二级页面较多时）</li>
+      </ul>
+    </li>
+    <li>总文件夹下仅放html文件，且总文件数不超过10个；</li>
+    <li>所有文件与文件夹的命名原则“见名思义”，但均不用中文命名。</li>
+  </ol>
+  <h4>网站的优化</h4>
+  <p>精简网站容量与整理优化HTML代码。</p>
+  <p><strong>清理无用文件</strong></p>
+  <p>网站制作过程添加到站点中但又没用到的图片、动画与文档，以精简网站容量。 </p>
+  <p><strong>整理HTML代码 </strong></p>
+  <p>在制作网页过程中，会产生很多无用代码、垃圾代码、甚至错误代码。 </p>
+  <p class="mark1">命令-&gt;清理XHTML</p>
+  <p align="center"><img src="images/clearup.png" alt="clear up" width="511" height="314" /></p>
+  <p><span class="mark1">命令-&gt;清理word生成的HTML</span></p>
+  <p>上传网站之前，需要清理网页中无用、错误的HTML代码，减少网页中的错误，提高网页浏览效率。</p>
+  <p><strong>改变站点范围的链接 </strong></p>
+  <p>网页中的链接是相互的，改变一个链接，其他网页中的有关链接也会改变，“改变站点范围的链接”命令可实现链接的批量修改。</p>
+  <p class="mark1">站点-&gt;改变站点范围的链接</p>
+  <p align="center"><img src="images/changelink.png" alt="changlink" width="390" height="140" border="0" /></p>
+  <p><strong>网站优化 </strong></p>
+  <p> 对网站进行程序、内容、版块、布局等多方面的优化调整，适合搜索引擎检索。 </p>
+  <p><span class="mark">注意</span>：优化前备份网站，免得误操作后造成信息丢失</p>
+  <h5>练习1：对递交到百度云盘的个人网站，修正文件夹结构，进行代码清理。</h5>
+  <p><a name="fp2" id="fp2"></a></p>
+  <div style=" height:75px"></div>
+  <h3>网站的本地测试</h3>
+  <ul>
+    <li>对于静态网站，主要测试页面设计、文字内容、图片、超级链接等；</li>
+    <li> 对于使用服务器数据库技术的动态网站，要测试服务器的运行环境、网站程序的稳定性、数据库系统的可靠性、服务器与客户端的交互功能等项目。   </li>
+  </ul>
+  <h4>浏览器兼容性测试</h4>
+  <p>检查文档中是否有目标浏览器所不支持的任何标签或属性（如页面中的样式、层、插件或JavaScript）等元素。 </p>
+  <p class="mark1">窗口-&gt;结果-&gt;浏览器兼容性</p>
+  <p align="center"><img src="images/BrowserTest.png" alt="BrowserTest" width="727" height="203" /></p>
+  <h4>链接测试</h4>
+  <p><strong>链接测试</strong>：<span class="mark1">窗口-&gt;结果-&gt;链接检查器</span></p>
+  <ul>
+    <li>检查网页链接</li>
+    <li>检查本地站点某部分中的链接</li>
+    <li>检查整个站点的链接</li>
+  </ul>
+  <p align="center"><img src="images/sitelinktest.png" alt="site link test" width="727" height="205" /></p>
+  <p><strong>修复链接</strong></p>
+  <p>在“结果”面板中可以修复检查到的断掉的链接。 </p>
+  <h4>代码验证</h4>
+  <p><span class="mark1">窗口-&gt;结果-&gt;验证</span></p>
+  <p align="center">&nbsp;</p>
+  <h4>检测下载速度</h4>
+  <p>DW会根据页面所有链接的对象，如图像和插件等来检测下载速度（状态栏上显示）。</p>
+  <p class="mark1">编辑-&gt;首选参数-&gt;状态栏-&gt;设置网络连接速度</p>
+  <p align="center"><img src="images/parameter.png" alt="para" width="690" height="484" /></p>
+  <p>网页的下载时间一般实行“8秒钟”原则，即大多数用户等待载入一个页面的时间不超过8秒钟。</p>
+  <h5>练习：找出以前制作过的“我的空间”的网站，进行测试和完善。</h5>
+  <p><a name="fp3" id="fp3"></a></p>
+  <div style=" height:75px"></div> 
+  <h3>申请空间与域名</h3>
+  <h4>网站空间租赁</h4>
+  <p><strong>申请免费空间</strong></p>
+  <p>可从<a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%E5%85%8D%E8%B4%B9%E7%A9%BA%E9%97%B4&amp;fr=search" target="_blank">百度贴吧</a>找一个靠谱的免费空间 </p>
+  <strong>申请收费空间 </strong>
+  <p>目前提供收费空间的网站托管机构很多：</p>
+  <ul>
+    <li>国外空间，如：万联网络、三蛋（<a href="http://www.000webhost.com/order.php" target="_blank">000webhost</a>）、艾堡主机等</li>
+    <li>国内空间，如：中国互联网、各省的电信或网通网络、城市在线等均提供收费网站空间及网站托管服务。 </li>
+  </ul>
+  <p>相关参数：</p>
+  <ul>
+    <li>空间大小</li>
+    <li>空间的功能支持</li>
+    <li>流量限制</li>
+    <li>可建网站数量等。</li>
+  </ul>
+  <h4>申请网络域名</h4>
+  <p>申请好主页空间之后，还必须有相应的域名才能够访问网页。</p>
+  <ul>
+    <li>域名由域名管理机构管理，域名是全球惟一的。</li>
+    <li>申请并使用一个域名，必须定期向域名管理机构支付相应费用。</li>
+    <li>域名是按地理域或组织域进行分层管理的，各层间用“.”隔开，域名依次从小到大，如“www.sina.com.cn”中，顶级域名为“cn”（地理域），次级域名为“com”（组织域），三级域名为“sina”。 </li>
+  </ul>
+  
+  <p><a name="fp4" id="fp4"></a></p>
+  <div style=" height:75px"></div>
+  <h3>网站上传发布</h3>
+  <p>发布站点也叫上传网站，以远程文件传输方式上传到服务器中申请的域名下。</p>
+  <ul>
+    <li>直接在资源管理器中上传</li>
+    <li>使用FTP协议来上传，用FTP软件（如CuteFTP等）或直接在资源管理器下拷贝。</li>
+    <li>使用Dreamweaver提供的上传/下载功能对网站进行发布。 </li>
+  </ul>
+  <h4>资源管理器</h4>
+  <p ><strong>添加网络位置到资源管理器：</strong><span class="mark1">打开资源管理器-&gt;计算机-&gt;添加一个网络位置</span>：</p>
+  <ul>
+    <li>指定网站位置</li>
+    <li>匿名登录或用户名</li>
+    <li>网络位置名称</li>
+  </ul>
+  <p><strong>上传站点：</strong>如本地操作一样复制文件到设定的位置</p>
+  <h4>DreamWeaver</h4>
+  <p><strong>配置远程信息</strong>：<span class="mark1">站点-&gt;管理站点-&gt;选择站点后编辑</span></p>
+  <p  align="center"><img src="images/managesite.png" alt="site manage" width="623" height="542" /></p>
+  <p><strong>上传文件</strong>：<span class="mark1">文件面板-&gt;选择站点-&gt;上传</span></p>
+  <p><a name="fp5" id="fp5"></a></p>
+  <div style=" height:75px"></div>
+  <h3>网站制作实训</h3>
+  <p>利用课程剩余的时间，运用网页设计与制作技术，制作出含有一定技术含量、包含一定信息容量的静态网站。</p>
+  <h5>实训任务</h5>
+  <ol>
+    <li>确定主题，站点规划，搜集资料；</li>
+    <li>构思网页布局和配色，PS设计主页效果图和二级、三级页面的效果图；</li>
+    <li>根据主页效果图，制作主页（从banner到整页）；</li>
+    <li>根据二级页面效果图，制作由主页可链接到的二级网页；</li>
+    <li>如有三级页面的，继续制作由二级网页可链接到的三级网页；</li>
+    <li>网页优化。链接正确得当，无多余文档，亦无文件丢失，动态效果恰当；</li>
+    <li>网站测试并递交，尽可能申请空间上传发布。</li>
+  </ol>
+  <h5>实训要求</h5>
+  <ol>
+    <li>自选主题，有一定信息容量，总页面应在6~12页之间；</li>
+    <li>网站结构规划合理，首页与二级页面设计导航栏（或导航条），保证所有页面可达可返；</li>
+    <li>页面布局合理，色彩和谐；<span lang="EN-US" xml:lang="EN-US"> </span></li>
+    <li>文件夹组织得当，文件夹和文件命名符合见名思义，不用中文；</li>
+    <li>运用CSS样式设置页面元素（文字、表格、图片等）；</li>
+    <li>恰当使用动态技术，包括行为、嵌入JavaScript代码等（不要过多使用）。</li>
+  </ol>
+  <h5>上交报告Read.doc格式</h5>
+  <p align="center"><strong>《××××××》网站设计与制作</strong><span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p align="center">学号 姓名<strong><span lang="EN-US" xml:lang="EN-US"> </span></strong></p>
+  <p><strong><span lang="EN-US" xml:lang="EN-US">一、</span>前言</strong></p>
+  <ul>
+    <li>选择该题材的缘由</li>
+    <li>设计进程安排<span lang="EN-US" xml:lang="EN-US"> </span></li>
+  </ul>
+  <p><strong><span lang="EN-US" xml:lang="EN-US">二、 </span>总体设计</strong></p>
+  <ul>
+    <li>说明设计思路</li>
+    <li>给出网站地图</li>
+    <li>配色和布局的考虑</li>
+    <li>首页效果图<span lang="EN-US" xml:lang="EN-US"> </span></li>
+  </ul>
+  <p><strong><span lang="EN-US" xml:lang="EN-US">三、</span>详细设计</strong></p>
+  <ul>
+    <li>导航栏的设计与制作</li>
+    <li>首页制作说明</li>
+    <li>二级页面的制作说明</li>
+    <li>网站采用的主要技术</li>
+  </ul>
+  <p><strong><span lang="EN-US" xml:lang="EN-US">四、</span></strong><strong>结束语</strong></p>
+  <ul>
+    <li>自我评价：网站实现了那些目标，有何改进之处</li>
+  </ul>
+  <p><strong><span lang="EN-US" xml:lang="EN-US">五、</span></strong><strong>课程学习总结</strong></p>
+  <ul>
+    <li>学习总结</li>
+    <li>建议</li>
+  </ul>
+  <p class="mark">报告3页以上，必做! 此文档应放在index.html同目录。</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson11/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right">Next</td>
+    </tr>
+  </table>
+  &nbsp;
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+<title>第十一回 表单网页设计与制作</title>
+<script  type="text/javascript">
+function toLink(){
+	var v=document.getElementById("lesson").selectedIndex;
+	if(v==0){}
+	else if(v<10){window.location="../lesson0"+v+"/index.html";}
+	else{window.location="../lesson"+v+"/index.html";}
+}
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+#lesson{
+	 width:200px; 
+	 height:35px; 
+	 font-size:16px; 
+	 padding-left:10px;
+	 line-height:35px;
+	 vertical-align:middle;
+	 background:#E2EEEF
+}
+#jumpMenu{
+	font-size:15px;
+	width:150px;
+	height:25px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="top">
+  <div id="logo">第十一回 表单网页设计与制作</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">表单与表单设计</a>
+	  <a href="#fp2"  class="">表单常用控件</a>
+	  <a href="#fp33"  class="">登录页面的制作</a>
+      <a href="#fp4"  class="">注册页面的制作</a>
+<a href="#fp5"  class="">查询跳转页面的制作</a></div>
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>
+			<!-- <span style="left: 565.5px;" id="marker"></span> -->
+</div>
+<div class="content">
+  <div> 
+    <p><a name="fp1" id="fp1"></a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3>表单与表单设计</h3>
+<h4>网页上的表单</h4>
+    <p>网页表单是验明用户身份、收集用户信息的最简单和直接的办法。</p>
+    <table width="804" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="top">
+        <td height="200"><img src="images/form3.png" alt="form3" width="340" height="188" /></td>
+        <td height="200"><img src="images/form5.jpg" alt="form5" height="188" align="right" /></td>
+      </tr>
+      <tr>
+        <td><img src="images/form7.png" alt="form7" width="342" height="226" /></td>
+        <td><img src="images/form7.jpg" alt="form7" width="315" height="232" align="right" /></td>
+      </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="190" align="center"><p><img src="images/form2.png" alt="form2" width="804" height="152" /></p></td>
+      </tr>
+    </table>
+   <br /> 
+   <h4>表单设计原则</h4>
+<p> 良好设计的表单可提供有效信息, 网页表单设计应遵循一定的规则：</p>
+<p><strong>1、简洁</strong></p>
+<ul>
+  <li>保持表单结构简洁，表单内的每个元素是有意义的；</li>
+  <li>考虑人们的阅读习惯：从上到下, 从左到右；</li>
+  <li> 可Tab键在表单的各个元素之间移动；</li>
+  <li>标签作为提示文字表达准确，无二义性；</li>
+  <li> 所有的表单元素均匀的分隔, 排列整齐。 </li>
+</ul>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/f1.png" width="458" height="322" alt="f1" /></td>
+    <td><img src="images/f2.png" width="444" height="311" /></td>
+    </tr>
+  <tr>
+    <td align="center"><img src="images/f3.png" width="363" height="386" alt="f3" /></td>
+    <td><p>三种常见的标准表单：</p>
+      <ul>
+        <li>标签左对齐的表单显得更整齐有序</li>
+        <li>标签右对齐的表单相对容易区分和信息录入</li>
+        <li>标签顶端对齐的表单整齐感不如前两种，但可令用户更便利填写表单</li>
+      </ul>      </td>
+    </tr>
+</table>
+<p><strong>2、以用户为中心</strong></p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top"><p>表单设计应以用户为中心，以达到良好的沟通，避免呆板的设计。</p>
+          <ul>
+            <li>需要用户输入的信息应是简明的</li>
+            <li>对于答案为固定项目的信息，可通过下拉列表和单选按钮让用户选取的方式作答</li>
+            <li>对敏感的个人信息声明隐私保护</li>
+            <li>较多信息量的文本框下给出简明扼要的提示</li>
+            <li>输入信息错误的提示</li>
+          </ul>
+        <p><img src="images/f4-1.png" alt="form-error" width="363" height="161" /></p></td>
+        <td><img src="images/f4.png" width="383" height="469" alt="f4" /></td>
+      </tr>
+    </table>
+    <p><strong>3、表单区域划分</strong></p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/f5.png" width="368" height="537" alt="f5" /></td>
+        <td valign="top"><p> 区域的划分有利于用户对表单的阅读。</p>
+          <p><span class="mark">区域的划分方法</span>：</p>
+          <ul>
+            <li>用水平线分隔不同的区域</li>
+            <li>不同的色块</li>
+            <li>用标题文字分割信息</li>
+          </ul>
+<p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <h4>表单的分类</h4>
+    <p style="padding-left:20px">搜索/查询表单、注册/登录表单、意见薄表单、订单输入表单、邮件编辑发送表单、 …… <a name="fp2" id="fp2"></a></p>
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3>表单常用控件</h3>
+    <h4>form标签</h4>
+    <p> &lt;form&gt;是表单的标记，可以看做一个包含很多表单控件的容器，为块状元素。基本语法结构是：</p>
+<p  align="center" class="mark1"> &lt;form&gt;  表单的内容 &lt;/form&gt; </p>
+    <table width="90%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="code"><p>&lt;form action=&quot;form_action.asp&quot; method=&quot;post&quot;&gt;<br />
+           &lt;label for=&quot;username&quot;&gt;姓名&lt;/label&gt; <br />          
+          &lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;<br />
+            &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;<br />
+        &lt;/form&gt;</p></td>
+        <td><form action="form_action.asp" method="post"> 
+<label for="username">姓名</label> 
+<input type="text" name="username" />
+<input type="submit" value="提交" />
+</form></td>
+      </tr>
+    </table>
+    <p><strong>form的主要属性</strong></p>
+    <ul>
+      <li>action：规定提交表单时向哪个文件发送表单数据。如：action=&quot;form_action.asp&quot;、action=&quot;form_action.jsp&quot;；</li>
+      <li>method：用来设定将表单数据传输到服务器所使用的方法，可取的属性值有：
+        <ul>
+          <li>get:将表单数据附加到所请求的RUL中，此种方法不能传送大量数据，安全性差；</li>
+          <li>post:将表单数据嵌入HTTP请求中，此种方法容许传送大量数据，较为常用。</li>
+        </ul>
+      </li>
+    </ul>
+<p align="center"><img src="images/form-property.png" alt="form property" width="717" height="44" /> </p>
+    <h4>      加入表单到页面</h4>
+    <table width="80%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/insert-form.png" alt="insert form" width="241" height="329" /></td>
+        <td valign="top"><p><span class="mark1">制作步骤</span>：</p>
+          <ul>
+            <li>插入表单</li>
+            <li>在表单中布局</li>
+            <li>插入表单元素</li>
+          </ul>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <h4>input标签</h4>
+<p>根据不同的 type 属性值，表现为不同的控件：文本框、复选框、密码输入框（掩码后的文本控件）、单选按钮、按钮等等。</p>
+    <table border="0" cellpadding="0" cellspacing="0" class="tt">
+      <tbody>
+        <tr>
+          <th width="127">type属性</th>
+          <th width="429">说明</th>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>单行文本输入框</td>
+        </tr>
+        <tr>
+          <td>checkbox</td>
+          <td>复选框</td>
+        </tr>
+        <tr>
+          <td>radio</td>
+          <td>单选按钮</td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>密码输入框(输入的文字用*表示)</td>
+        </tr>
+        <tr>
+          <td>submit</td>
+          <td>提交表单信息，提交给action属性所指向的文件</td>
+        </tr>
+        <tr>
+          <td>image</td>
+          <td>图像按钮，提交表单信息</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>通过文本框可输入字母、数字等内容 ，文本框的默认宽度是20个字符</li>
+      <li>一个表单中的多个单选按钮，互相排斥</li>
+      <li>复选框适用于给出多项，供用户选取其中一个或若干选项<br />
+</li>
+    </ul>
+<h4>select标签</h4>
+    <table width="80%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="code">&lt;select name=&quot;fruit&quot; id=&quot;fruit&quot;&gt;<br />
+&lt;option&gt;Apple&lt;/option&gt;<br />
+&lt;option&gt;Peach&lt;/option&gt;<br />
+&lt;option&gt;Papaya&lt;/option&gt;<br />
+&lt;option&gt;banana&lt;/option&gt;<br />
+&lt;option&gt;Orange&lt;/option&gt;<br />
+&lt;/select&gt;</td>
+        <td><select name="fruit" id="fruit" style="width:120px; height:26px">
+    <option>Apple</option>
+    <option>Peach</option>
+    <option>Papaya</option>
+    <option>banana</option>
+    <option>Orange</option>
+  </select></td>
+      </tr>
+    </table>
+    <p align="center"><img src="images/fruit-form.png" alt="fruit form" width="665" height="93" /><br />
+    </p>
+    <h4>textArea标签</h4>
+    <table width="80%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="code">&lt;textarea name=&quot;yoursuggest&quot; cols =&quot;40&quot; rows = &quot;5&quot;&gt;<br />          &lt;/textarea&gt;</td>
+        <td><textarea name="yoursuggest"  title="djfkdjf" cols ="40" rows = "5"></textarea></td>
+      </tr>
+    </table>
+    <p> 通过 cols 和 rows 属性规定 textarea 的尺寸，使用 CSS 的 height 和 width 属性更精确。</p>
+    <p align="center"><img src="images/suggest.png" alt="suggest" width="679" height="93" /></p>
+    <h4><a name="fp33" id="fp33"></a></h4>
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3>登录页面的制作</h3>
+
+    <h5>制作如下图所示的用户登录表单。</h5>
+    <div align="center"><a href="https://secure.its.yale.edu/cas/login?service=http%3A%2F%2Fcpsc.yale.edu%2Finternal-cs-only" target="_blank"><img src="images/yalecs-login.png" width="557" height="403" border="1" /></a></div>
+    <div>
+      <p><strong>提示与说明</strong>：</p>
+      <ol>
+        <li>只仿制原网页的表单部分（即如上图部分），用表格布局较为方便。方框Html参考代码：
+          <div style="margin:0 50px; font-size:14px">&lt;form id=&quot;form1&quot; name=&quot;form1&quot; method=&quot;post&quot; action=&quot;&quot;&gt;<br />
+            &lt;table width=&quot;540&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;<br/>
+    ............<br />
+    &lt;/table&gt;<br />
+    &lt;/form&gt;</div>
+        </li>
+        <li>关于颜色：
+          <ul style="margin:5px 10px; list-style:square; font-size:14px">
+            <li>&quot;Login required&quot;等标题为#883f0a;</li>
+            <li> <span class="mark"></span>表单上其他文字颜色为#5f5f5f;</li>
+            <li>&quot;Login&quot;按纽颜色为#555;</li>
+            <li>&quot;Login&quot;按纽背景颜色为#F5F091</li>
+          </ul>
+        </li>
+        <li>&quot;Login&quot;按纽的鼠标手形标识在css样式中设置：<span class="mark">cursor:pointer;</span>。<a name="fp4" id="fp4"></a></li>
+      </ol>
+</div>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+    <h3>注册页面的制作</h3>
+    <h5>制作如下图所示的注册页面</h5>
+    <table width="800" border="0" cellspacing="0">
+      <tr>
+        <td><img src="images/form1.png" width="367" height="393" /></td>
+        <td><img src="images/form4.png" width="367" height="393" /></td>
+      </tr>
+    </table>
+    <p><strong>提示与说明</strong>：</p>
+    <ol>
+      <li>注册表单为335宽，350高（单位为像素）；</li>
+      <li>网页中有效图文部分应置页面的中心；</li>
+      <li>定位好div盒子（自行设置样式reg），在div中放入表单：</li>
+    </ol>
+    <div style="margin:0 50px; font-size:14px">
+      <p>&lt;div class=&quot;reg&quot;&gt;<br />
+&lt;form id=&quot;form1&quot; name=&quot;form1&quot; method=&quot;post&quot; action=&quot;&quot;&gt;</p>
+      <p>.............</p>
+      <p>&lt;/form&gt;<br />
+        &lt;/div&gt; </p>
+    </div>
+    <ol start="4">
+      <li>表单上属于一组的标签与文本框，可放在同一个div中：</li>
+    </ol>
+    <div style="margin:0 50px; font-size:14px">
+      <p> &lt;div class=&quot;textfield&quot;&gt;<br />
+&lt;label for=&quot;user&quot;&gt;USERNAME&lt;/label&gt;<br />
+&lt;input type=&quot;text&quot; name=&quot;user&quot; id=&quot;user&quot; /&gt;<br />
+&lt;/div&gt; </p>
+    </div>
+    <ol start="5">
+      <li>标签与文本框及其放置的div的样式为：</li>
+    </ol>
+    <table width="557" border="0" cellspacing="0" cellpadding="0" style="font-size:14px;margin:0 auto">
+      <tr>
+        <td><p><span class="mark">.textfield </span>{<br />
+          position:relative; <br />
+          margin:5px auto; <br />
+          padding:7px; <br />
+          height:40px; <br />
+          width:272px;<br />
+          text-align:center;<br />
+          }<br />
+          <span class="mark">.textfield input</span> {<br />
+            display:block; <br />
+            height:40px; <br />
+            width:272px;<br />
+            text-align:center;<br />
+            font-size:18px;<br />
+        }</p></td>
+        <td valign="top"><span class="mark">.textfield label </span>{<br />
+position:absolute; <br />
+display:block;<br />
+height:40px; <br />
+width:272px; <br />
+line-height:40px;<br />
+vertical-align:middle;<br />
+color:#999;<br />
+}</td>
+      </tr>
+    </table>
+    
+    <ol start="6">
+      <li>图片按钮需在input标签中，将类型type设为image，同时设置src属性，指定图片文件；</li>
+      <li>点击文本框，准备输入时，提示标签自动清空，对应的Javascript代码为：</li>
+    </ol>
+    <div style="margin:0 50px; font-size:14px">
+      <p>&lt;script type=&quot;text/javascript&quot; src=&quot;<a href="demo2/jquery.js" target="_blank">jquery.js</a>&quot;&gt;&lt;/script&gt;<br />
+        &lt;script type=&quot;text/javascript&quot;&gt;<br />
+        $(document).ready(function() {<br />
+$('.textfield label').click(function() {<br />
+$(this).hide();<br />
+$(this).parent().find('input').attr('value', '').focus();<br />
+});</p>
+      <p> $('.textfield input').focus(function() {<br />
+        $(this).parent().find('label').hide();<br />
+        if( this.value != '' ) {$(this).select();}<br />
+        });</p>
+      <p> $('.textfield input').blur(function() {<br />
+        if( this.value == '' ) {<br />
+        this.value = '';<br />
+        $(this).parent().find('label').show();<br />
+        }<br />
+        });<br />
+        });<br />
+  &lt;/script&gt;</p>
+    </div>
+    <p><a name="fp5" id="fp5"></a></p>
+<p> </p>
+<p>&nbsp;</p>
+<h3>查询与跳转页面的制作</h3>
+<h4>跳转菜单</h4>
+<p class="mark1">插入-&gt;（表单）跳转菜单</p>
+<table width="800" border="0" cellspacing="0">
+  <tr>
+    <td width="547">&lt;select name=&quot;jumpMenu&quot; id=&quot;jumpMenu&quot; onchange=&quot;MM_jumpMenu('parent',this,0)&quot;&gt;<br />
+      &lt;option value=&quot;http://www.baidu.com&quot;&gt;baidu&lt;/option&gt;<br />
+      &lt;option value=&quot;http://www.g.cn&quot;&gt;google&lt;/option&gt;<br />
+      &lt;option value=&quot;http://www.bing.com&quot;&gt;bing&lt;/option&gt;<br />
+&lt;/select&gt;</td>
+    <td width="249" style="font-size:14px; padding:5px 10px"><p>
+      <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+        <option value="http://www.baidu.com">baidu</option>
+        <option value="http://www.g.cn">google</option>
+        <option value="http://www.bing.com">bing</option>
+      </select>
+    </p>
+      <p>&nbsp;</p>
+      <p>html代码和脚本都自动生成！ </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h4>配合JavaScript实现跳转</h4>
+<ul>
+  <li>按一般的Select菜单制作</li>
+  <li>在select标签中添加onchange, 如：&lt;select id=&quot;lesson&quot; <span class="mark">onchange=&quot;toLink()&quot;</span>&gt;</li>
+  <li>在head部分的script标签中设计相应的函数（此例的toLink()如右下）</li>
+</ul>
+<table width="800" border="0" cellspacing="0">
+  <tr>
+    <td>
+    <div style="background:#D9D5B5; width:300px; margin:0 auto; padding:15px 15px; height:150px">
+<div style="font-size:24px; color:red; line-height:60px; margin:10px 0">
+学而时习之，温故而知新
+</div>
+<form action="" method="post"  name="form1" target="_blank">
+<select id="lesson" onchange="toLink()">
+  <option>请选择课程</option>
+  <option>第一回</option>
+  <option>第二回</option>
+  <option>第三回</option>
+  <option>第四回</option>
+  <option>第五回</option>
+  <option>第六回</option>
+  <option>第七回</option>
+  <option>第八回</option>
+  <option>第九回</option>
+  <option>第十回</option>
+  <option>第十一回</option>
+  <option>第十二回</option>
+</select>
+  </form>
+</div>
+    </td>
+    <td style="font-size:14px; padding:5px 10px">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function toLink(){<br />
+var v=document.getElementById(&quot;lesson&quot;).selectedIndex;<br />
+if(v==0){}<br />
+else if(v&lt;10){window.location=&quot;../lesson0&quot;+v+&quot;/index.html&quot;;}<br />
+else{window.location=&quot;../lesson&quot;+v+&quot;/index.html&quot;;}<br />
+}<br />
+&lt;/script&gt;</td>
+  </tr>
+</table>
+<h5>仿制如下网页（不考虑二级菜单）。注意图中红框部分，下拉列表应能跳转到正确的网页。</h5>
+<p><a href="http://giving.yale.edu/" target="_blank"><img src="images/givingyale.jpg" width="100%"  /></a></p>
+<p>&nbsp;</p>
+<p><a name="fp6" id="fp6"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    <table width="100%" border="0" cellpadding="2">
+      <tr>
+        <td><a href="../lesson10/index.html">Last</a></td>
+        <td align="center"><a href="../index.html">Home</a></td>
+        <td align="right"><a href="../lesson12/index.html">Next</a></td>
+      </tr>
+    </table>
+    &nbsp;
+    <p></p>
+    <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+  </div>
+</div>
+</body>
+</html>

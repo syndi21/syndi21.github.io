@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>JsÍ¼Æ¬ÎÞ·ì¹ö¶¯</title>
+<style type="text/css">
+body{
+/*background:gray;*/
+}
+#wrap{
+	width:100%;
+	height:200px;
+	border:1px solid black;
+	position:relative;
+	margin:auto auto;
+	background:#F5E0E3;
+	overflow:hidden;
+}
+#wrap ul{
+	margin:0px;
+	padding:0px;
+	position:absolute;
+}
+#wrap ul li{
+	list-style:none;
+	float:left;
+	margin:7px 10px;
+}
+#wrap ul li img{
+	width:300px;
+	height:184px;
+	cursor:pointer;
+}
+.direction{
+	width:120px;
+	margin:10px auto;
+}
+.direction img{
+	border:1px dotted pink;
+	cursor:pointer;
+}
+.active{
+	border:2px solid gray;
+}
+</style>
+<script type="text/javascript" src="../JS/showpic.js">
+</script>
+</head>
+<body onLoad="showpics()">
+<div class="direction">
+<img src="../images/album/left.png"  alt="" id="button1"/>
+<img src="../images/album/right.png" alt="" id="button2"/>
+</div>
+<div id="wrap" align="center">
+<ul>
+<li><a href="../images/album/1.jpg" target="_blank"><img src="../images/album/1.jpg" alt="1" /></a></li>
+<li><a href="../images/album/2.jpg" target="_blank"><img src="../images/album/2.jpg" alt="2" /></a></li>
+<li><img src="../images/album/3.jpg" alt="3"/></li>
+<li><img src="../images/album/4.jpg" alt="4" /></li>
+<li><img src="../images/album/5.jpg" alt="5" /></li>
+<li><img src="../images/album/6.jpg" alt="6" /></li>
+</ul>
+</div>
+</body>
+</html>

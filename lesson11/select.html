@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body{
+	margin:0 0;
+}
+#lesson{
+	 width:200px; 
+	 height:35px; 
+	 font-size:16px; 
+	 padding-left:10px;
+	 line-height:35px;
+	 vertical-align:middle;
+	 background:#E2EEEF
+}
+</style>
+<script type="text/javascript">
+function toLink(){
+	var v=document.getElementById("lesson").selectedIndex;
+if(v==0){}
+else if(v<10){window.location="../lesson0"+v+"/index.html";}
+else{window.location="../lesson"+v+"/index.html";}
+}
+</script>
+</head>
+
+<body>
+<div style="background:#D9D5B5; width:300px; margin:0 auto; padding:15px 15px; height:150px">
+<div style="font-size:24px; color:red; line-height:60px; margin:10px 0">
+学而时习之，温故而知新
+</div>
+<form action="" method="post"  name="form1" target="_blank">
+<select id="lesson" onchange="toLink()">
+  <option>请选择课程</option>
+  <option>第一回</option>
+  <option>第二回</option>
+  <option>第三回</option>
+  <option>第四回</option>
+  <option>第五回</option>
+  <option>第六回</option>
+  <option>第七回</option>
+  <option>第八回</option>
+  <option>第九回</option>
+  <option>第十回</option>
+</select>
+</form>
+</div>
+</body>
+</html>

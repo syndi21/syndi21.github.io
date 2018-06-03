@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="yang peili"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://syndi.h-a33-host.n9cn1.com/files/favicon.ico" rel="Shortcut Icon"/>
+
+<script type="text/javascript" src="js/clock.js">
+</script>
+
+<title>第九回 JavaScript脚本语言运用</title>
+<style type="text/css">
+<!--
+@import url("../files/lesson-style.css");
+#clock{ height:300px; width:300px; border:1px solid #ccc;}
+.js{
+	color:red;
+	font-size:16px;
+}
+.tt td{
+	border:1px solid #378488;
+}
+.tt th{
+	border:1px solid #378488;
+}
+.tt {
+	color: #333;
+	background-color: #f7f7ff;	
+	border-collapse:collapse;
+	/*border-style: none;*/
+	border-color: #3C0;
+}
+-->
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+document.oncontextmenu=new Function('event.returnValue=false;');
+</script>
+<div id="top">
+  <div id="logo">第九回 JavaScript脚本语言运用</div>
+	<div id="menu">
+	  <a href="#fp1" class="active">JavaScript简介</a>
+	  <a href="#fp2" class="">网页中运用JavaScript</a>
+	  <a href="#fp3" class="">常用信息对话框</a>
+<a href="#fp4" class="">JavaScript基本语法</a>
+<a href="#fp5" class="">函数的定义与使用</a>
+<a href="#fp6" class="">脚本应用实训</a>
+</div>
+			<!-- <span style="left: 565.5px;" id="marker"></span> -->
+<div id="home"><a href="../index.html"><img  border="none" src="../files/Home.png" alt="Home" longdesc="../index.html" /></a></div>
+</div><a name="fp1" id="fp1"></a>
+<div class="content">
+<div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<h3>JavaScript简介</h3>
+<h4>JavaScript示例</h4>
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div id="clock"></div></td>
+    <td align="right"><iframe width="350" height="300" src="sample/background.html" align="middle" frameborder="0"></iframe>
+</td>
+  </tr>
+</table>
+<div style="text-align:center">
+  <iframe src="sample/selectpic.html" frameborder="0" align="middle" scrolling="No" style="width:760px; height:400px; background:#999;border:#00F solid 1px; " ></iframe>
+</div>
+<p align="center">&nbsp;
+  <iframe width="760" height="500" src="http://www.themaninblue.com/experiment/BunnyHunt/index.htm" frameborder="0" align="middle" scrolling="no"></iframe>
+</p>
+<h4>JavaScript认识</h4>
+<ul>
+  <li>
+    JavaScript 是一种脚本语言，用以编写客户端程序；</li>
+  <li>JavaScript 程序嵌在HTML中使用，解释性，不需预编译；</li>
+  <li>JavaScript 基于对象，由事件驱动；  </li>
+  <li>JavaScript主要功能有：
+    <ul>
+      <li>验证表单、用户交互操作。如网上问卷等</li>
+      <li>检测浏览器，控制浏览器行为。如浏览器的退后、刷新、加入收藏夹等。</li>
+      <li>与页面元素交互，如控制图片等。</li>
+      <li>读写客户端信息，即客户端的cookies信息。 <a name="fp2" id="fp2"></a></li></ul></li></ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>网页中使用JavaScript</h3>
+<h4>JavaScript脚本格式 </h4>
+  <div style="padding-left:50px;">&lt;script  type=&quot;text/javascript&quot;&gt;<br />
+    JavaScript代码行 <br />
+    &lt;/script&gt;</div>
+<table width="85%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="326" valign="top"><p><br />
+      &lt;html&gt;<br />
+      &lt;body&gt;<br />
+      <span class="mark1">&lt;script typle=&quot;text/javascript&quot;&gt;</span><br />
+      <span class="js">var i,j;<br />
+      for(i=1;i&lt;10;i++){<br />
+document.write(&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&quot;);<br />
+for(j=1;j&lt;=i; j++){<br />
+document.write(&quot;*&quot;);<br />
+}<br />
+document.write(&quot;&lt;br/&gt;&quot;);<br />
+}</span><span class="mark1"><br />
+&lt;/script&gt;</span><br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;</p></td>
+    <td width="368" valign="top"><ul>
+      <li>document.write&nbsp;字段是标准的 JavaScript 命令，用来向页面写入。大小写敏感。 </li>
+      <li>如输出多行，行之间的换行不可用”\n”，需用HTML中的&lt;br&gt;或别的标签实现。 </li>
+      <li>空格用&amp;nbsp;来输出。</li>
+      <li>语句后分号可选，可用分号一行写多条代码。</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><em>&lt;----假设命名为star.html</em></p></td>
+    </tr>
+</table>
+<h4>脚本的位置</h4>
+<p><strong>脚本一般放在 head 部分（推荐）， </strong><strong>也可放在 body部分。</strong></p>
+<table width="70%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><p align="left">&lt;html&gt;<br />
+  &lt;head&gt;<br />
+  &lt;script  type=&quot;text/javascript&quot;&gt;<br />
+      ....<br />
+  &lt;/script&gt;<br />
+  &lt;/head&gt;</p>
+      <p align="left">&lt;body&gt;<br />
+  &lt;script  type=&quot;text/javascript&quot;&gt;<br />
+        ....<br />
+  &lt;/script&gt;<br />
+  &lt;/body&gt;<br />
+  &lt;/html&gt;</p></td>
+  </tr>
+</table>
+<p><strong>脚本可单独写在外部文件</strong><strong>(.js)</strong><strong>中</strong><strong> </strong><br />
+  外部文件的使用：</p>
+<blockquote>
+  <p>&lt;script   type=&quot;text/javascript&quot; src=&quot;<span class="mark">xxx.js</span>&quot;&gt;....&lt;/script&gt;</p>
+  <p>&nbsp;</p>
+</blockquote>
+<h4>脚本中的注释</h4>
+<p>在JavaScript脚本中同css一样可由/*…..*/包含多行注释。 </p>
+<h5>练习1：用JavaScript脚本在网页上显示数行文字，诸如：”大家好，欢迎浏览“等。</h5>
+<div style="padding-left:50px;"><p><span class="mark1">分别尝试如下方法</span>：</p>
+      <ul>
+        <li>JavaScript脚本写在HTML文件中（head或body中）</li>
+        <li>JavaScript脚本存成文件，在HTML中导入脚本</li>
+      </ul>      </div>
+<a name="fp3" id="fp3"></a>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<h3>常用信息对话框</h3>
+<h4><strong>信息提示框</strong></h4>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><p class="mark1">alert(&quot;文本&quot;)</p>
+      <p> 常用于确保用户可以得到某些信息。例：</p>
+      <p>例：修改star.html，在三角形显示前显示信息提示窗。</p>
+      <p align="right"><em>此例为Chrome浏览器显示</em>--&gt;</p></td>
+    <td><img src="images/alert-chrome.png" alt="alert"  /></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>
+      </p><div class="js">alert(&quot;JavaScript程序正在运行中...\n程序现在暂停\n单击确定按钮，程序将会继续运行，并显示一个三角形。&quot;);</div>&nbsp;
+      <p>&nbsp;</p>
+      <p align="right"><em>此例为IE浏览器显示</em>--&gt;</p></td>
+    <td><img src="images/alert-ie.png" alt="alert-ie"/></td>
+  </tr>
+</table>
+<h4><br />
+  <strong>信息确认框 </strong></h4>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td  rowspan="2" valign="top"><p class="mark1">confirm(&quot;文本&quot;)</p>
+      <p> 确认框用来让用户进行信息验证或接受信息。 
+        返回值：</p>
+      <ul>
+        <li>用户点击确认，返回值为 true。</li>
+        <li>用户点击取消，返回值为 false。 </li>
+      </ul>
+      <p>例：将显示三角形的JS程序嵌在一个带id（设为star）的div中，在显示三角形前作颜色选择，并直接更改此div的color样式值。</p>
+      <p>&lt;div id=&quot;star&quot;&gt;<br />
+        &lt;script type=&quot;text/javascript&quot; src=&quot;star.js&quot;&gt;<br />
+        &lt;/script&gt;<br />
+        &lt;/div&gt;</p></td>
+    <td ><img src="images/confirm.png" width="481" /></td>
+  </tr>
+  <tr>
+    <td height="139" class="js" >if(confirm(&quot;Would you like to show in red?&quot;)){<br />
+document.getElementById(&quot;star&quot;).style.color=&quot;red&quot;;<br />
+}</td>
+  </tr>
+</table>
+<h4><strong>信息输入框</strong></h4>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><p class="mark1">prompt(&quot;文本&quot;,&quot;默认值&quot;)</p>
+      <p> 提示框常用于提示用户在进入页面前输入某个值。 
+        返回值：</p>
+      <ul>
+        <li>返回值为输入的值</li>
+        <li>如用户点击取消，那么返回值为 null </li>
+      </ul>
+      <p>例：在三角形输出前再加上像素尺寸的输入，以确定三角形中星号的大小。</p>
+      <div class="js">document.getElementById(&quot;star&quot;).style.fontSize=prompt(&quot;Please input the font size what you wanna show:&quot;)+&quot;px&quot;;</div></td>
+    <td><img src="images/prompt.png" alt="prompt"  /></td>
+  </tr>
+</table>
+<h5>练习2：如下图示，网页上日期和其后文本由javaScript程序生成。在显示前通过confirm框选定颜色，并由promt框确定字体大小。（也可尝试用id设置样式）</h5>
+<table width="100%" border="0" cellspacing="0">
+  <tr>
+    <td width="67%" valign="top">
+      <p><img src="images/welcome.gif" width="530" border="0" /></p>
+      <p>&lt;div id=&quot;date&quot;&gt;<br />
+        &lt;script typle=&quot;text/javascript&quot; src=&quot;date.js&quot;&gt;<br />
+        &lt;/script&gt;<br />
+        &lt;/div&gt;</p></td>
+    <td width="33%" valign="top"><p>【关于日期的提示】 </p>
+      <ol>
+        <li>可由以下语句取得当前日期信息：<br />
+          var date=new Date();</li>
+        <li>然后可用：
+          <p>date.getYear()--求年份信息<br />
+  date.getMonth()--求月份信息<br />
+            date.getDate()--求日期信息</p>
+</li>
+      <li>由document.write向页面写入</li>
+      </ol></td>
+  </tr>
+</table>
+<p><a name="fp4" id="fp4"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<h3>JavaScript语法基础</h3>
+<h4>javascript中的变量</h4>
+<p>  <strong>JavaScript 变量名称的规则 </strong></p>
+<ul>
+  <li>变量对大小写敏感（y 和 Y 是两个不同的变量） </li>
+  <li>变量必须以字母或下划线开始 </li>
+</ul>
+<p><strong>声明（创建）  JavaScript 变量 </strong></p>
+<div style="margin:0 60px; font-size:20px;">var  变量名（表）;<br />
+var x;                                 /*声明变量*/<br />
+var car,name;                       /*声明变量*/ <br />
+var x=5;                              /*声明变量同时赋数值，声明赋值可分开进行*/ <br />
+var carname=&quot;Hello&quot;;          /*声明变量同时赋文本值*/ </div>
+<h4>javascript中的运算 </h4>
+<p><strong>简单运算</strong></p>
+<div style="margin:0 60px; font-size:20px;">算术运算符：+       -       *       /      %      ++     --（同c语言） <br />
+赋值运算符：=       +=   -=      *=     /=     %=<br />
+字符串连接：+ （包括字符串同数字连接） </div>
+<br />
+<table width="500" border="0" cellpadding="0" cellspacing="0" class="tt">
+  <tr>
+    <td bgcolor="#F0FFE1" class="tt">&lt;script  type=&quot;text/javascript&quot;&gt;<br />
+x=5+5;<br />
+document.write(x+&quot;&lt;br&gt;&quot;);<br />
+x=&quot;5&quot;+&quot;5&quot;;<br />
+document.write(x+&quot;&lt;br&gt;&quot;);<br />
+x=5+&quot;5&quot;;<br />
+document.write(x+&quot;&lt;br&gt;&quot;);<br />
+&lt;/script&gt;</td>
+    </tr>
+</table>
+<p><strong>关系运算与逻辑运算</strong></p>
+<div style="margin:0 60px; font-size:20px;">
+  <p>比较运算符：==   ===(值和类型全等)         !=     &gt;       &gt;=     &lt;       &lt;=</p>
+  <p>逻辑运算符：&amp;&amp;   ||     !
+  </p>
+</div>
+<p><strong>条件运算符</strong></p>
+<div style="margin:0 60px; font-size:20px;">(condition) ? value1 : value2</div>
+<h4>javascript中的条件语句（类同C） </h4>
+<div style="margin:0 60px; font-size:24px;">
+  <p>if</p>
+  <p>if…else</p>
+  <p>if… else if…else</p>
+  <p>switch</p>
+  <p></p></div>
+<h4>javascript中的循环语句</h4>
+<div style="margin:auto 60px; font-size:24px;">
+  <p>for</p>
+  <p>while</p>
+  <p>do while</p>
+</div>
+例：用JavaScript脚本根据时间显示不同的问候语，并显示当前时间。<br/>
+<div style="color:#F00; text-decoration:underline; padding-left:50px;">
+<script type="text/javascript">
+var d = new Date();
+var time = d.getHours();
+document.write("Now is "+time+":"+d.getMinutes()+":"+d.getSeconds()+"       ");
+if (time>=4&&time<11) document.write("Good morning!");
+else if (time>=11 && time<18) document.write("Good afternoon!");
+else if(time>=18 && time<20) document.write("Good evening!");
+else document.write("Good night!");
+</script></div>
+<table width="600" border="0" cellpadding="0" cellspacing="0" class="tt">
+  <tr>
+    <td>&lt;html&gt;<br />
+      &lt;head&gt;<br />
+      &lt;style&gt;<br />
+      body{ text-align:center;margin:100px; font-size:48px;color:red;}<br />
+      &lt;/style&gt;<br />
+      &lt;/head&gt;<br />
+      &lt;body&gt;<br />
+      &lt;script type=&quot;text/javascript&quot;&gt;<br />
+      var d = new Date();<br />
+      var time = d.getHours();<br />
+      if (time&gt;=4&amp;&amp;time&lt;11)
+document.write(&quot;Good morning&quot;);<br />
+else if (time&gt;=11 &amp;&amp; time&lt;18)
+document.write(&quot;Good afternoon&quot;);<br />
+else if(time&gt;=18 &amp;&amp; time&lt;20)
+document.write(&quot;Good evening!&quot;);<br />
+else
+document.write(&quot;Good night!&quot;);<br />
+document.write(&quot;&lt;br&gt;Now is &quot;+time+&quot;:&quot;+d.getMinutes()+&quot;:&quot;+d.getSeconds());<br />
+&lt;/script&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</td>
+  </tr>
+</table>
+<p>参考网址：<a href="http://www.w3school.com.cn/js/jsref_obj_date.asp" target="_blank">http://www.w3school.com.cn/js/jsref_obj_date.asp</a><a name="fp5" id="fp5"></a></p>
+<p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h3> 函数定义与使用</h3>
+<h4><strong>函数的定义</strong>
+</h4>
+  <table width="500" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td bgcolor="#FFFFE8"><p>function  函数名(参数){<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;函数体 <br />
+        }</p></td>
+      </tr>
+  </table>
+  <h4><strong>函数的使用</strong></h4>
+  <p>函数的使用方式：某事件发生时调用一个特定的函数。</p>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tt">
+    <tr>
+      <td bgcolor="#F0FFE1" class="tt">&lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br />
+        &lt;script type=&quot;text/javascript&quot;&gt;<br />
+        <span class="mark">function displayMessage(){<br />
+          alert(&quot;Hello, Welcome you!&quot;)<br />
+          }</span><br />
+        &lt;/script&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+        &lt;div <span class="mark">onclick=&quot;displayMessage()&quot;</span>  style=&quot;width:180px; font-size:30px&quot;&gt; Click me!&lt;/div&gt;<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;<br /></td>
+      <td bgcolor="#F0FFE1" class="tt">&lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br />
+        &lt;script type=&quot;text/javascript&quot;&gt;<br />
+        <span class="mark">function checkLeave(){<br />
+　event.returnValue=&quot;Are you sure to leave?&quot;;<br />
+}</span><br />
+&lt;/script&gt;<br />
+&lt;/head&gt;<br />
+&lt;body <span class="mark">onbeforeunload=&quot;checkLeave()&quot;</span>&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</td>
+    </tr>
+  </table>
+  <h4><strong>常用事件</strong></h4>
+  <table border="0" cellpadding="0" cellspacing="0" class="tt">
+      <tr>
+        <th width="191">事件名</th>
+        <th width="301">事件发生时机</th>
+      </tr>
+      <tr>
+        <td>onabort</td>
+        <td>图像加载被中断</td>
+      </tr>
+      <tr>
+        <td>onblur</td>
+        <td>元素失去焦点</td>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>用户改变域的内容</td>
+      </tr>
+      <tr>
+        <td class="mark">onclick</td>
+        <td>鼠标点击某个对象</td>
+      </tr>
+      <tr>
+        <td>ondblclick</td>
+        <td>鼠标双击某个对象</td>
+      </tr>
+      <tr>
+        <td>onerror</td>
+        <td>当加载文档或图像时发生某个错误</td>
+      </tr>
+      <tr>
+        <td>onfocus</td>
+        <td>元素获得焦点</td>
+      </tr>
+      <tr>
+        <td>onkeydown</td>
+        <td>某个键盘的键被按下</td>
+      </tr>
+      <tr>
+        <td>onkeypress</td>
+        <td>某个键盘的键被按下或按住</td>
+      </tr>
+      <tr>
+        <td>onkeyup</td>
+        <td>某个键盘的键被松开</td>
+      </tr>
+      <tr>
+        <td class="mark">onload</td>
+        <td>某个页面或图像被完成加载</td>
+      </tr>
+      <tr>
+        <td>onmousedown</td>
+        <td>某个鼠标按键被按下</td>
+      </tr>
+      <tr>
+        <td>onmousemove</td>
+        <td>鼠标被移动</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>鼠标从某元素移开</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>鼠标被移到某元素之上</td>
+      </tr>
+      <tr>
+        <td>onmouseup</td>
+        <td>某个鼠标按键被松开</td>
+      </tr>
+      <tr>
+        <td>onreset</td>
+        <td>重置按钮被点击</td>
+      </tr>
+      <tr>
+        <td>onresize</td>
+        <td>窗口或框架被调整尺寸</td>
+      </tr>
+      <tr>
+        <td>onselect</td>
+        <td>文本被选定</td>
+      </tr>
+      <tr>
+        <td>onsubmit</td>
+        <td>提交按钮被点击</td>
+      </tr>
+      <tr>
+        <td>onunload</td>
+        <td>用户退出页面</td>
+      </tr>
+  </table>
+<p>&nbsp;</p>
+  <h5>练习3：设计一个Welcome()函数，在网页打开时显示“欢迎光临！”的消息框。<a name="fp6" id="fp6"></a></h5>
+  <p>&nbsp;</p>
+<p>&nbsp;</p>
+  <h3>脚本应用实训</h3>
+  <h4>图片切换</h4>
+  <p>参照<a href="sample/flip.html" target="_blank">flip.html</a>，对仿制的<a href="http://cpsc.yale.edu/" target="_blank">cpsc.yale.edu</a>页面上的图片进行自动轮流切换。</p>
+  <iframe src="sample/flip.html" frameborder="0" align="middle" scrolling="No" style="width:980px; height:350px; " ></iframe>
+  <h4 style="line-height:40px">JavaScript时钟</h4>
+利用<a href="JS/clock.js">clock.js</a>自行配色和设定尺寸，制作JavaScript时钟。
+  <p align="center"><img src="images/clock.png" alt="clock" width="215" height="217" /></p>
+  <h4>图片选择</h4>
+  <p>对<a href="sample/selectpic.html" target="_blank">selectpic.html</a>进行修改，增加到六个图片，改变显示尺寸。</p>
+  <div style="text-align:center">
+  <iframe src="sample/selectpic1.html" scrolling="no" style="width:450px; height:276px;border:none"></iframe>
+  </div>
+  &nbsp;
+  <h4 >平移图片</h4>
+利用<a href="JS/showpic.js">showpic.js</a>，制作了自动平移图片的网页<a href="sample/showpic.html" target="_blank">showpic.html</a>。分析之，变化图片显示尺寸，点击图片时在新窗口打开图片。
+<p align="center">
+    <iframe width="100%" height="280" src="sample/showpic.html" frameborder="0" align="middle" scrolling="No" ></iframe>
+    &nbsp;</p>
+  <p ><span class="mark1">学习与研究</span>：</p>
+  <ul>
+    <li>图片平移速度的改变</li>
+    <li>图片显示大小的改变</li>
+    <li>平移方向可否为纵向？</li>
+    <li>点击缩略图在同一页上显示大图的实现</li>
+  </ul>
+  <h3>&nbsp;</h3>
+  <h3>延伸学习与练习</h3>
+  <h5>延伸学习</h5>
+  <p><a href="http://www.w3school.com.cn/js/index.asp" target="_blank">JavaScript 教程  </a></p>
+<h5>JavaScript特效实现</h5>
+  <p>参考  <a href="http://www.codefans.net/jscss/">http://www.codefans.net/jscss/</a>，给自己的网页实现JS网页特效。</p>
+  <p>如：禁止右键、  禁止网页复制、进度条、日历等。</p>
+  <p>&nbsp;</p>
+  <table width="100%" border="0" cellpadding="2">
+    <tr>
+      <td><a href="../lesson09/index.html">Last</a></td>
+      <td align="center"><a href="../index.html">Home</a></td>
+      <td align="right"><a href="../lesson10/index.html">Next</a></td>
+      </tr>
+  </table>
+  &nbsp;<p></p>
+  <p class="copyright"> ©2012-2018 Yang Peili. All rights reserved. <a href="mailto:peili07@gmail.com">contact me</a></p>
+</div>
+</div>
+</body>
+</html>
